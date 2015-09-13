@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<style>
+
+body {
+	background-color: #fffff;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+.header {
+	z-index: 100;
+/*	position: fixed;*/
+	background-color: #EDFFFF;
+	width:100%;
+	height: 100px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.title h1 {
+	margin:auto;
+	text-align: center;
+	font-size:36pt;
+}
+
+
+/* Header */
+
+
+.nav {
+	margin:auto;
+	text-align: center;
+	list-style-type: none;
+	padding: initial;
+	padding-top: 16px;
+
+}
+
+.nav-item {
+	text-align: center;
+	display:inline;
+	font-size: 12pt;
+	font-weight: lighter;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+/* Body */
+
+
+.home-grid {
+	position: relative;
+	max-width:1030px;
+	margin: 0 auto;
+	display:block;
+	padding-top: 60px
+}
+
+.grid {
+	position: relative;
+	max-width:818px;
+	margin: 0 auto;
+	display:block;
+	padding-top: 80px
+
+}
+
+
+.grid img {
+	width:230px;
+}
+
+
+.sequence{
+	position: relative;
+	max-width:860px;
+	margin: 0 auto;
+	display:block;
+	padding-top: 60px;
+
+}
+
+
+.sequence img {
+	width:200px;
+}
+
+
+
+.grid-two {
+	position: relative;
+	max-width:545px;
+	margin: 0 auto;
+	display:block;
+	padding-top: 80px
+}
+
+
+.grid-two img {
+	width:230px;
+
+}
+
+
+
+.project{
+	display:inline-block;
+	width:28%;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 50px;
+}
+
+.square-one {
+	position: relative;
+	width:230px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin:0;
+	display:inline-block;
+}
+
+.sequence-one {
+	position: relative;
+	width:200px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin:0;
+	display:inline-block;
+}
+
+
+
+.project-image {
+	width: 300px;
+	/*height: 300px;*/
+	background-position: center; 
+}
+
+a {
+	color:#000000;
+	text-decoration: none;
+}
+
+
+.nav .nav-item a:hover {
+	border-bottom: 2px solid;
+}
+
+.nav .nav-item a:active {
+	border-bottom: 2px solid;
+}
+
+a:active {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+
+.project-title {
+	padding-top: 20px;
+	text-align: left;
+	font-size: 1.6rem;
+	font-weight: 800;
+
+}
+.project-subtitle {
+	padding-top: 4px;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: .01rem;
+
+}
+.project-description {
+	margin-top: 20px;
+	text-align: left;
+	font-size: .9rem;
+	font-weight: 100;
+	letter-spacing: .01rem;
+}
+
+.meta-title {
+	padding-top: 20px;
+	color: #808080;
+	font-weight: 500;
+	font-size: .7rem;
+	letter-spacing: .01rem;
+}
+
+.meta-data {
+	padding-top: 5px;
+	font-weight: 100;
+	font-size: .8rem;
+	letter-spacing: .01rem;
+}
+
+.hero-ios {
+	position:relative;
+	float:right;
+	right: 50%;
+	padding-top: 40px;
+
+
+}
+
+.hero-ios .hero-phone img{
+	/*position: relative;*/
+	position:relative;
+	float:right;
+	width: 300px;
+	right: 50%;
+	padding-top: 40px;
+
+}
+
+.hero-phone{
+	position:relative;
+	float:right;
+	width:300px;
+
+}
+
+.hero-gif {
+	padding-left: 52px;
+    padding-top: 66px;
+	position: absolute;
+	z-index: 2;
+	width: 194px;
+}
+
+.right-container {
+	position: relative;
+	left:50%;
+	width:30%;
+	max-width: 320px;
+	margin:0;
+	padding-top: 40px;
+	padding-left: 20px;
+
+}
+
+.center-title {
+	padding-top: 100px;
+	font-weight: 100;
+	font-size: 1.2rem;
+	letter-spacing: .1rem;
+	text-align: center;
+	color: #696969;
+}
+
+.center-subtitle {
+	padding-top: 10px;
+	font-weight: 100;
+	font-size: 1rem;
+	letter-spacing: .1rem;
+	text-align: center;
+	color: darkgrey;
+}
+
+
+.still {
+	position: absolute;
+	z-index: 2;
+	opacity: 1;
+}
+
+.still:hover {
+	opacity:0;
+}
+
+.mini-title {
+	padding-top: 20px;
+	text-align: center;
+	font-size: .8rem;
+	font-weight: 800;
+	color: #696969;
+	letter-spacing: .03em;
+
+
+}
+
+.mini-subtitle {	
+	padding-top: 5px;
+	text-align: center;
+	font-size: .7rem;
+	font-weight: 100;
+	color: #696969;
+	padding-bottom: 20px;
+	letter-spacing: .02em;
+
+}
+
+.color-background {
+	background-color: #FBDDDE;
+	padding-bottom: 100px
+}
+
+.white-bg {
+	background-color: #ffffff;
+}
+
+.dark-background{
+	background-color: #6b6a6b;
+	width: 100%;
+	height:400px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.light-bg {
+	margin-top: 60px;
+	background-color: #fafafa;
+	padding-bottom: 180px;
+}
+
+.sequence-arrow {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #696969;
+}
+
+.home-project-title{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 11pt;
+	font-weight: 800;
+	letter-spacing: .02em;
+	color:#3e3e3e;
+
+}
+.home-project-subtitle{
+	padding-top: 3px;
+	text-align: center;
+	font-size: 9pt;
+	font-weight: 500;
+	letter-spacing: .02em;
+	color:#3e3e3e;
+}
+.home-project-company{
+	padding-top: 5px;
+	text-align: center;
+	font-size: 8pt;
+	font-weight: 100;
+	letter-spacing: .02em;
+	color: 
+}
+
+.big-left img{
+	position: relative;
+	float:right;
+	width: 300px;
+	right: 50%;
+	padding-top: 40px;
+
+}
+
+/* Footer */
+
+
+.footer-wrapper{
+	height: 180px;
+	width:100%;
+	background-color: #E8E8E8;
+}
+
+.footer {
+	margin:auto;
+	padding: initial;
+	padding-top: 85px;
+	text-align: center;
+	list-style-type: none;
+
+}
+
+.footer-links {
+	text-align: center;
+	display:inline;
+	font-size: 1rem;
+	font-weight: lighter;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.footer-links a {
+	color: #505050;
+}
+
+
+</style>
+</head>
+<div class="header">
+	<div class="title"> 
+		<a href="MartinBush_Portfolio.html">
+		<h1>Martin Bush</h1>
+		</a>
+	</div>
+	<ul class="nav">
+		<li class="nav-item">
+			<a href="#">Web</a></li>
+		<li class="nav-item">
+			<a href="##">iOS</a></li>
+		<li class="nav-item">
+			<a href="#3">Animations</a></li>
+		<li class="nav-item">
+			<a href="##">Contact</a></li>
+	</ul>
+</div>
+
+<body>
+
+<div class="color-background">
+	<div class="hero-ios">
+		<img class="hero-gif" src="images/success/5_success.gif">
+		<img class="hero-phone" src="images/success.png">
+	</div>
+	<div class="right-container">
+		<div class="project-title">
+			Success Animation
+		</div>
+		<div class="project-subtitle">
+			Print Studio App - iOS
+		</div>
+		<div class="project-description">
+			Animating from product preview screen to homescreen. When the user adds a product to the cart we wanted to delight them with a fun animation and a feeling of success. Completing a custom photo project should be celebrated. After placing this item in the cart the user should be prompted to either continue shopping or checkout. Animation should highlight the cart icon on the homescreen. From the home screen the user can make another product or tap the cart icon to check out. In the end we included an action during the animation to direct the user
+		</div>
+		<div class="meta-title">
+			Role
+		</div>
+		<div class="meta-data">
+			UI / Visual Design and Animation
+		</div>
+			<div class="meta-title">
+			Year
+		</div>
+		<div class="meta-data">
+			2015
+		</div>
+			<div class="meta-title">
+			Company
+		</div>
+		<div class="meta-data">
+			Social Print Studio
+		</div>
+			<div class="meta-title">
+			URL
+		</div>
+		<div class="meta-data">
+			<a href="https://itunes.apple.com/us/app/print-studio-print-photos/id601882801?mt=8" target="_blank">
+			View in the app Store
+			</a>
+		</div>
+	</div>
+</div>
+<div class="white-bg">
+	<div class="center-title"> Animating from Screen 1 through Screen 3 </div>
+	<div class="sequence">
+		<div class="sequence-one">
+			<div class="mini-title"> Screen 1 </div>
+			<div class="mini-subtitle"> Calender Preview Screen </div>
+			<img src="images/success/sequence_1.jpg">
+			<p class="sequence-arrow"> &rarr; </p>
+		</div>
+		<div class="sequence-one">
+			<div class="mini-title"> Screen 2 </div>
+			<div class="mini-subtitle"> Added to Cart Message </div>
+			<img src="images/success/sequence_2.jpg">
+			<p class="sequence-arrow"> &rarr; </p>
+		</div>
+		<div class="sequence-one">
+			<div class="mini-title"> Screen 3 </div>
+			<div class="mini-subtitle"> Home Screen </div>
+			<img src="images/success/sequence_3.jpg">
+			<p class="sequence-arrow"> &rarr; </p>
+		</div>
+	</div>
+<div class="light-bg">
+	<div class="center-title"> Animation Drafts </div>
+	<div class="center-subtitle"> Hover to animate gif </div>
+	<div class="grid">
+		<div class="square-one">
+			<div class="mini-subtitle"> Initial Mock Up </div>
+			<img class="still" src="images/success/success_overlay_1.jpg">
+			<img src="images/success/1_success.gif">
+		</div>
+		<div class="square-one">
+			<div class="mini-subtitle"> 2nd Iteration </div>
+			<img class="still" src="images/success/success_overlay_2.jpg">
+			<img src="images/success/2_success.gif">
+		</div>
+		<div class="square-one">
+			<div class="mini-subtitle"> 3rd Iteration  </div>
+			<img class="still" src="images/success/success_overlay_3.jpg">
+			<img src="images/success/3_success.gif">
+		</div>
+	</div>
+	<div class="grid-two">
+		<div class="square-one">
+			<div class="mini-subtitle"> Xth Iteration  </div>
+			<img class="still" src="images/success/success_overlay_4.jpg">
+			<img src="images/success/4_success.gif">
+		</div>
+		<div class="square-one">
+			<div class="mini-subtitle"> Final Mock Up </div>
+			<img class="still" src="images/success/success_overlay_5.jpg">
+			<img src="images/success/5_success.gif">
+		</div>
+	</div>
+</div>
+
+	<div class="dark-background">
+		<div style="color: darkgrey; padding-top:0px;"class="center-title"> App Description</div>
+		<div class="big-left">
+			<img src="images/success/sps_icon_square.png">
+		</div>
+		<div class="right-container">
+			<div class="project-title" style="color:#efefef;">
+				Print Studio - iOS
+			</div>
+			<div class="project-subtitle" style="color:#efefef;">
+				Print Photos from iPhone & Instagram
+
+			</div>
+			<div class="project-description" style="color:#efefef;">
+				The best way to print your iPhone and Instagram photos! Our delightful app delivers quality prints, photobooks and more direct to your door wherever you are in the world. We're a small independent company and we built this app from scratch, join us!
+				<br>
+				<br>
+				By Social Print Studio
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="white-bg"style="padding-bottom:100px;">
+	<div class="center-title"> More Projects </div>
+	<div class="home-grid">
+			<div class="project">
+				<a href="#"> 
+					<img class="project-image" style="background-color: #e1f2f0;" src="images/home/PrintStudio_Web_400.png" alt="projectx">
+					<div class="home-project-title">Social Print Studio Website</div>
+					<div class="home-project-subtitle">UI and Visual Design</div>
+					<div class="home-project-company">Social Print Studio</div>
+				</a>
+			</div>
+			<div class="project">
+				<a href="#"> 
+					<img class="project-image" src="images/home/iOSCheckout_400.png" alt="projectx">
+					<div class="home-project-title">Checkout Process - iOS</div>
+					<div class="home-project-subtitle">UI/Visual Design and Animation</div>
+					<div class="home-project-company">Print Studio App by Social Print Studio</div>
+				</a>
+			</div>
+			<div class="project">
+				<a href="#"> 
+					<img class="project-image" src="images/home/success_400.png" alt="projectx">
+					<div class="home-project-title">Add-To-Cart Animation</div>
+					<div class="home-project-subtitle">Animation - After Effects</div>
+					<div class="home-project-company">Print Studio App - iOS</div>
+				</a>
+			</div>
+			<div class="project">
+				<a href="#"> 
+					<img class="project-image" src="images/home/PrintStudioApp_400.png" alt="projectx">
+					<div class="home-project-title">Print Studio App - iOS</div>
+					<div class="home-project-subtitle">Visual Design and Animation</div>
+					<div class="home-project-company">Social Print Studio</div>
+				</a>
+			</div>
+			<div class="project">
+				<a href="#"> 
+					<img class="project-image" style="background-color: #e1f2f0;" src="images/home/WebCheckout_400.png" alt="projectx">
+					<div class="home-project-title">Checkout Process - Web</div>
+					<div class="home-project-subtitle">Visual Design and UI</div>
+					<div class="home-project-company">Social Print Studio</div>
+				</a>
+			</div>
+			<div class="project">
+				<a href="#"> 
+					<img class="project-image" src="images/home/PrintStudioTransition_400.png" alt="projectx">
+					<div class="home-project-title">Print Studio App - iOS</div>
+					<div class="home-project-subtitle">Animation</div>
+					<div class="home-project-company">Social Print Studio</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+<div class="footer-wrapper">
+	<ul class="footer">
+		<li class="footer-links">
+			<a href="http://www.linkedin.com/in/martincbush" target="_blank">LinkedIn</a></li>
+		<li class="footer-links">
+			<a href="https://www.behance.net/martinbushdesign" target="_blank">Behance</a></li>
+		<li class="footer-links">
+			<a href="http://www.martinbushdesign.tumblr.com" target="_blank">Tumblr</a></li>
+		<li class="footer-links">
+			<a href="http://instagram.com/martybush" target="_blank">Instagram</a></li>
+		<li class="footer-links">
+			<a href="##">Resume</a></li>
+	</ul>
+</div>
+
+</body>
+</html>
