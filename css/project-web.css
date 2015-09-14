@@ -171,6 +171,7 @@ a:focus {
 
 
 .centered {
+	padding-top: 60px;
 	width: 700px;
 	margin: auto;
 }
@@ -181,6 +182,7 @@ a:focus {
 }
 
 .centered-pair {
+	padding-top: 60px;
 	display: block;
 	width: 800px;
 	margin:auto;
