@@ -302,6 +302,21 @@ a:focus {
 	padding-bottom: 180px;
 }
 
+.oldside {
+	position: relative;
+	width:160px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin:0;
+	display:inline-block;
+}
+
+.oldside img{
+	width:160px;
+	margin-bottom:30px;
+}
+
+
 .sequence-arrow {
 	text-align: center;
 	font-size: 1.5rem;
