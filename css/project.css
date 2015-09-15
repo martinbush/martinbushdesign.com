@@ -62,6 +62,16 @@ body {
 
 }
 
+.centered {
+	padding-top: 60px;
+	width: 700px;
+	margin: auto;
+}
+
+.centered img {
+	width:660px;
+	margin: auto;
+}
 
 
 .project{
