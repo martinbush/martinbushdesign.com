@@ -212,7 +212,16 @@ a:focus {
 	margin:0;
 	padding-top: 120px;
 	padding-left: 20px;
+}
 
+.app-container {
+	position: relative;
+	left:50%;
+	width:30%;
+	max-width: 320px;
+	margin:0;
+	padding-top: 40px;
+	padding-left: 20px;
 }
 
 .center-title {
@@ -284,7 +293,6 @@ a:focus {
 }
 
 .light-bg {
-	margin-top: 60px;
 	background-color: #fafafa;
 	padding-bottom: 180px;
 }
