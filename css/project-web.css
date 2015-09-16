@@ -383,14 +383,24 @@ a:focus {
 .post {
 	position: relative;
 	/*width:30%;*/
-	max-width: 620px;
-	margin:0;
+	max-width: 1200px;
+	margin:0 auto;
 
 	padding-top: 80px;
 	display: inline-block;
 }
 
 .post img {
-	width:360px;
-	margin-bottom: -154px;
+	width:1160px;
+
+}
+
+.app-container {
+	position: relative;
+	left:50%;
+	width:30%;
+	max-width: 320px;
+	margin:0;
+	padding-top: 40px;
+	padding-left: 20px;
 }

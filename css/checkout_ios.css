@@ -274,6 +274,7 @@ a:focus {
 }
 
 .right-container {
+	color: #313131;
 	position: relative;
 	left:50%;
 	width:30%;
@@ -348,6 +349,12 @@ a:focus {
 	background-color: #FBDDDE;
 	padding-bottom: 100px
 }
+
+.color-background-blue {
+	background-color: #DDF4FB;
+	padding-bottom: 100px
+}
+
 
 .white-bg {
 	background-color: #ffffff;
