@@ -118,8 +118,8 @@ a:focus {
 .project-image:hover{
 	background-color: #EBF7FE;
 	background-position: center;
-	-webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
-    transition: background-color 1s;
+	-webkit-transition: background-color .1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color .1s;
     transition-timing-function: ease;
 
 }

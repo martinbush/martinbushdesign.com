@@ -232,6 +232,7 @@ a:focus {
 }
 
 .right-container {
+	color: #313131;
 	position: relative;
 	left:50%;
 	width:30%;
