@@ -337,34 +337,3 @@ a:focus {
 	padding-top: 40px;
 
 }
-
-/* Footer */
-
-
-.footer-wrapper{
-	height: 180px;
-	width:100%;
-	background-color: #E8E8E8;
-}
-
-.footer {
-	margin:auto;
-	padding: initial;
-	padding-top: 85px;
-	text-align: center;
-	list-style-type: none;
-
-}
-
-.footer-links {
-	text-align: center;
-	display:inline;
-	font-size: 1rem;
-	font-weight: lighter;
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
-.footer-links a {
-	color: #505050;
-}
