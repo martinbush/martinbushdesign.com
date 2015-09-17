@@ -220,7 +220,7 @@ a:focus {
 	margin-top: 20px;
 	text-align: left;
 	font-size: .9rem;
-	font-weight: 100;
+	font-weight: 200;
 	letter-spacing: .01rem;
 }
 
@@ -242,7 +242,7 @@ a:focus {
 	position:relative;
 	float:right;
 	right: 50%;
-	padding-top: 120px;
+	padding-top: 60px;
 
 
 }
@@ -251,7 +251,7 @@ a:focus {
 	/*position: relative;*/
 	position:relative;
 	float:right;
-	width: 300px;
+	width: 360px;
 	right: 50%;
 	padding-top: 40px;
 
@@ -260,7 +260,7 @@ a:focus {
 .hero-phone{
 	position:relative;
 	float:right;
-	width:300px;
+	width:360px;
 
 }
 
@@ -295,9 +295,9 @@ a:focus {
 
 .center-title {
 	padding-top: 100px;
-	font-weight: 100;
-	font-size: 1.2rem;
-	letter-spacing: .1rem;
+	font-weight: 500;
+	font-size: 1.5rem;
+	letter-spacing: .05rem;
 	text-align: center;
 	color: #696969;
 }
@@ -306,7 +306,7 @@ a:focus {
 	padding-top: 10px;
 	font-weight: 100;
 	font-size: 1rem;
-	letter-spacing: .1rem;
+	letter-spacing: .05rem;
 	text-align: center;
 	color: darkgrey;
 }
@@ -376,7 +376,7 @@ a:focus {
 .oldside {
 	position: relative;
 	width:146px;
-	padding-left: 5px;
+	padding-left: 20px;
 	padding-right: 0px;
 	margin:0;
 	display:inline-block;
