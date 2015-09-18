@@ -1,5 +1,5 @@
 body {
-	background-color: #ffffff;
+	background-color: #f3f3f3;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
@@ -30,15 +30,15 @@ body {
 	max-width:1030px;
 	margin: 0 auto;
 	display:block;
-	padding-top: 190px;
+	padding-top: 170px;
 	padding-bottom: 100px;
 }
 
 .project{
 	display:inline-block;
-	width:29%;
-	padding-left: 20px;
-	padding-right: 20px;
+	width:33%;
+/*	padding-left: 8px;
+	padding-right: 8px;*/
 	padding-top: 50px;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 */
 .project-image {
-	width: 300px;
+	width: 340px;
 	/*height: 300px;*/
 	background-position: center; 
 	/*background-color: #8E7194;*/
@@ -64,14 +64,42 @@ a {
 
 
 .project-image:hover{
-	background-color: #EBF7FE;
+	background-color: #F5F5F5;
 	background-position: center;
 
-	-webkit-transition: background-color .1s; /* For Safari 3.1 to 6.0 */
-    transition: background-color .1s;
-    transition-timing-function: ease;
+	-webkit-transition: background-color 300ms; /* For Safari 3.1 to 6.0 */
+    transition: background-color 300ms;
+    transition-timing-function: ease-out;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+
 
 }
+
+
+/*.project:hover .home-project-title {
+*/
+/*
+	-ms-transform: translate(0,-10px); 
+    -webkit-transform: translate(0,-10px); 
+    transform: translate(0,-10px); 
+	-webkit-transition: translate 600ms;
+    transition: translate 600ms;
+    transition-timing-function: ease-out;*/
+
+
+/*	-webkit-transition: position 600ms; /* For Safari 3.1 to 6.0 */
+/*    transition: position 600ms;
+    transition-timing-function: ease-out;
+
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+}
+*/
+
 
 .home-project-title{
 	padding-top: 20px;
@@ -98,3 +126,5 @@ a {
 	letter-spacing: .02em;
 	color: 
 }
+
+
