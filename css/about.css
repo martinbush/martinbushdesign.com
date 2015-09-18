@@ -1,0 +1,29 @@
+body {
+	background-color: #ffffff;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+
+}
+
+.about-container {
+	padding-top: 100px;
+	max-width: 1200px;
+	width: 80%;
+	margin:0 auto;
+}
+
+h1 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom:2px;
+}
+
+.content {
+	font-size: .9rem;
+	font-weight: 300;
+	margin: 0;
+	margin-bottom:20px;
+
+}

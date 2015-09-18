@@ -196,11 +196,11 @@ a:focus {
 }
 
 .hero-gif {
-	padding-left: 52px;
-    padding-top: 66px;
+	padding-left: 63px;
+    padding-top: 80px;
 	position: absolute;
 	z-index: 2;
-	width: 194px;
+	width: 233px;
 }
 
 .right-container {

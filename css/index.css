@@ -6,62 +6,10 @@ body {
 
 }
 
-.header {
-	z-index: 100;
-	position: fixed;
-	background-color: #EDFFFF;
-	width:100%;
-	height: 100px;
-	padding-top: 40px;
-	padding-bottom: 30px;
-}
-
-.title h1 {
-	margin:auto;
-	text-align: center;
-	font-size:34pt;
-	letter-spacing: .01em;
-}
-
-.title h2 {
-	margin:auto;
-	text-align: center;
-	font-size:8pt;;
-	font-weight: 100;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	letter-spacing: 1px;
-	color: #696969;
-}
-
-/* Header */
-
-
-.nav {
-	margin:auto;
-	text-align: center;
-	list-style-type: none;
-	padding: initial;
-	padding-top: 16px;
-
-}
-
-.nav-item {
-	text-align: center;
-	display:inline;
-	font-size: 10pt;
-	font-weight: lighter;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	letter-spacing: .5px;
-}
-
-
-
 /* Body */
 
 .color1 {
-	background-color: #00FCD2;
+	background-color: #00CEFC;
 }
 
 .color2 {
@@ -113,23 +61,7 @@ a {
 }
 
 
-.nav .nav-item a:hover {
-	border-bottom: 2px solid;
-}
 
-.nav .nav-item a:active {
-	border-bottom: 2px solid;
-}
-
-a:active {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:focus {
-	text-decoration: none;
-}
 
 .project-image:hover{
 	background-color: #EBF7FE;
@@ -144,7 +76,7 @@ a:focus {
 .home-project-title{
 	padding-top: 20px;
 	text-align: center;
-	font-size: 11pt;
+	font-size: 12pt;
 	font-weight: 700;
 	letter-spacing: .02em;
 	color:#3e3e3e;
@@ -153,7 +85,7 @@ a:focus {
 .home-project-subtitle{
 	padding-top: 3px;
 	text-align: center;
-	font-size: 9pt;
+	font-size: 11pt;
 	font-weight: 500;
 	letter-spacing: .02em;
 	color:#3e3e3e;
@@ -161,7 +93,7 @@ a:focus {
 .home-project-company{
 	padding-top: 5px;
 	text-align: center;
-	font-size: 8pt;
+	font-size: 10pt;
 	font-weight: 100;
 	letter-spacing: .02em;
 	color: 
