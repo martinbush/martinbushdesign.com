@@ -41,6 +41,39 @@ a {
 
 }
 
+.play-wrapper {
+	position: relative;
+	width:70%;
+	max-width:1030px;
+	margin: 0 auto;
+	display:block;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	height:3000px;
+}
+.right-side {
+	width:50%;
+	float: left;
+}
+
+.left-side {
+	width:50%;
+	float: left;
+}
+
+.flat-square {
+	display:inline-block;
+	width:98%;
+	margin-left: .8rem;
+	margin-bottom: .2rem;
+/*	padding-right: 8px;*/
+    height: 100%;
+    vertical-align: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
 .project-square {
 	display:inline-block;
 	width:48%;
@@ -52,16 +85,23 @@ a {
 	-webkit-transition:  box-shadow 100ms; /* For Safari 3.1 to 6.0 */
     transition:  box-shadow 100ms;
     transition-timing-function: ease-in;
-    height: 600px;
+    height: 100%;
     vertical-align: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
 	
 }
 
 .project-image {
 	width: 100%;
+	height: 100%;
+
 	/*height: 300px;*/
-	background-position: center; 
-	/*background-color: #8E7194;*/
+	background-position: 47% 66%; 
+	background-color: initial;
+	-webkit-transition: background-position 100ms; /* For Safari 3.1 to 6.0 */
+    transition: background-position 100ms;
+    transition-timing-function: ease;
 }
 
 .project-square:hover{
@@ -75,16 +115,49 @@ a {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+    -webkit-transition: box-shadow 900ms; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 900ms;
+     transition-timing-function: ease-out;
 }
 
-.project-square:hover .project-image {
+.project-square:hover  {
 	background-color: #F5F5F5;
-	background-position: center;
+	background-position: center
 
 	-webkit-transition: background-color 300ms; /* For Safari 3.1 to 6.0 */
     transition: background-color 300ms;
     transition-timing-function: ease-out;
 
+
+}
+
+.project-square:hover .home-project-title {
+	color: #626262;
+
+	-webkit-transition: color 300ms; /* For Safari 3.1 to 6.0 */
+    transition: color 300ms;
+    transition-timing-function: ease-out;
+
+}
+
+.project-square:hover .home-project-subtitle {
+	color: #626262;
+
+	-webkit-transition: color 300ms; /* For Safari 3.1 to 6.0 */
+    transition: color 300ms;
+    transition-timing-function: ease-out;
+
+}
+
+.project-square:hover {
+	background-position: 47% 66%;
+    -webkit-transition: background-position 100ms; /* For Safari 3.1 to 6.0 */
+    transition: background-position 100ms;
+    transition-timing-function: ease;
+}
+
+.playimage {
+	color: #ffffff !important;
 }
 
 .home-project-title{
