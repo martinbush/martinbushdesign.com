@@ -88,7 +88,6 @@ a {
 	width:48%;
 	margin-left: .8rem;
 /*	padding-right: 8px;*/
-	padding-top: 50px;
 	border-radius: 2px;
 	box-shadow: initial;
     height: 100%;
@@ -172,7 +171,7 @@ a {
 }
 
 .home-project-title{
-	padding-top: 20px;
+	padding-top: 70px;
 	text-align: left;
 	font-size: 1.5rem;
 	font-weight: 700;
