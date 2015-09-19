@@ -7,10 +7,13 @@ body {
 }
 
 .about-container {
-	padding-top: 100px;
-	max-width: 1200px;
-	width: 80%;
-	margin:0 auto;
+	position: relative;
+	width:70%;
+	max-width:1030px;
+	margin: 0 auto;
+	display:block;
+	padding-top: 80px;
+	padding-bottom: 100px;
 }
 
 h1 {
@@ -18,6 +21,7 @@ h1 {
 	font-weight: 500;
 	margin: 0;
 	margin-bottom:2px;
+	margin-left: 70px;
 }
 
 .content {
@@ -25,5 +29,6 @@ h1 {
 	font-weight: 300;
 	margin: 0;
 	margin-bottom:20px;
+	margin-left: 70px;
 
 }
