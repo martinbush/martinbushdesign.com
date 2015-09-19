@@ -20,13 +20,22 @@ a {
 }
 
 .hero-me {
-	width:50%;
-	margin: 0 auto;
-	margin-top: 50px;
+	width:20%;
+	margin-left: .8rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 400px;
+	height: 200px;
+}
+
+.mini-hero-me {
+    width: 179px;
+    margin-left: 0;
+    margin-top: -185px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 158px;
 }
 
 
@@ -82,13 +91,15 @@ a {
 	padding-top: 50px;
 	border-radius: 2px;
 	box-shadow: initial;
-	-webkit-transition:  box-shadow 100ms; /* For Safari 3.1 to 6.0 */
-    transition:  box-shadow 100ms;
-    transition-timing-function: ease-in;
     height: 100%;
     vertical-align: top;
     background-size: 100%;
     background-repeat: no-repeat;
+   	background-position: initial;
+	background-color: #54DEFD;
+	-webkit-transition: all 300ms cubic-bezier(0.01, 0.98, 0.9, 1.01); /* For Safari 3.1 to 6.0 */
+    transition: all 300ms cubic-bezier(0.01, 0.98, 0.9, 1.01);
+
 	
 }
 
@@ -99,14 +110,14 @@ a {
 	/*height: 300px;*/
 	background-position: 47% 66%; 
 	background-color: initial;
-	-webkit-transition: background-position 100ms; /* For Safari 3.1 to 6.0 */
-    transition: background-position 100ms;
-    transition-timing-function: ease;
+	-webkit-transition: background-position 100ms ease; /* For Safari 3.1 to 6.0 */
+    transition: background-position 100ms ease;
 }
+
+
 
 .project-square:hover{
 	background-color: #F5F5F5;
-	background-position: center;
 
 	-webkit-transition: background-color 300ms; /* For Safari 3.1 to 6.0 */
     transition: background-color 300ms;
@@ -115,27 +126,32 @@ a {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
-    -webkit-transition: box-shadow 900ms; /* For Safari 3.1 to 6.0 */
-    transition: box-shadow 900ms;
-     transition-timing-function: ease-out;
+    -webkit-transition: all 300ms ease-out; /* For Safari 3.1 to 6.0 */
+    transition: all 300ms ease-out;
 }
 
-.project-square:hover  {
-	background-color: #F5F5F5;
-	background-position: center
+.project-square:hover {
+	background-position: 47% 66%;
+    -webkit-transition: background-position 100ms; /* For Safari 3.1 to 6.0 */
+    transition: background-position 100ms cubic-bezier(.24,.8,.43,.99);
+}
 
-	-webkit-transition: background-color 300ms; /* For Safari 3.1 to 6.0 */
+/*.project-square:hover  {
+	background-color: #F5F5F5;
+	background-position: center;
+
+	-webkit-transition: background-color 300ms; 
     transition: background-color 300ms;
     transition-timing-function: ease-out;
 
 
-}
+}*/
 
 .project-square:hover .home-project-title {
 	color: #626262;
 
-	-webkit-transition: color 300ms; /* For Safari 3.1 to 6.0 */
-    transition: color 300ms;
+	-webkit-transition: color 400ms; /* For Safari 3.1 to 6.0 */
+    transition: color 400ms;
     transition-timing-function: ease-out;
 
 }
@@ -149,12 +165,7 @@ a {
 
 }
 
-.project-square:hover {
-	background-position: 47% 66%;
-    -webkit-transition: background-position 100ms; /* For Safari 3.1 to 6.0 */
-    transition: background-position 100ms;
-    transition-timing-function: ease;
-}
+
 
 .playimage {
 	color: #ffffff !important;
