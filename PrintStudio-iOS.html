@@ -4,11 +4,12 @@
 
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
 <link rel="stylesheet" type="text/css" href="css/checkout_ios.css">
 <link rel="stylesheet" type="text/css" href="css/meat.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 
 </head>
 <div class="header">
@@ -611,6 +612,22 @@
 				<a href="##">Resume</a></li> -->
 		</ul>
 	</div>
-
+<script>
+function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 300,
+            header = document.querySelector("header");
+        if (distanceY > shrinkOn) {
+            $(header).addClass("small");
+        } else {
+            if $(header).hasClass("small") {
+                 $(header).removeClass("small");
+            }
+        }
+    });
+}
+window.onload = init();
+</script>
 </body>
 </html>

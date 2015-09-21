@@ -50,38 +50,7 @@ a {
 
 }
 
-.play-wrapper {
-	position: relative;
-	width:70%;
-	max-width:1030px;
-	margin: 0 auto;
-	display:block;
-	padding-top: 80px;
-	padding-bottom: 100px;
-	height:2200px;
-}
-.right-side {
-	width:50%;
-	float: left;
-}
 
-.left-side {
-	width:50%;
-	float: left;
-}
-
-.flat-square {
-	display:inline-block;
-	width:98%;
-	margin-left: .8rem;
-	margin-bottom: .2rem;
-/*	padding-right: 8px;*/
-    height: 100%;
-    vertical-align: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-}
 
 .project-square {
 	display:inline-block;
