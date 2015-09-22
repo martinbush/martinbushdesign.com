@@ -57,6 +57,10 @@
 }
 .nav-item a{
 	color:black;
+	padding: .7rem;
+	background-color: initial;
+		-webkit-transition: background-color 940ms;
+    -moz-transition: background-color 940ms;
 }
 
 .nav .nav-item:hover {
@@ -86,3 +90,39 @@ a:focus {
 .selected { 
 	background-color: rgba(0,255,255,.8)!important;
  }
+
+ @media screen and (max-width: 900px) { 
+
+ 	.header {
+ 		display: block;
+ 		height: 100px;
+ 	}
+
+	.title h1 {
+		text-align: center;
+		margin: 0 auto;
+		float: initial;
+		font-size:20pt;
+		letter-spacing: .01em;
+		font-weight: 600;
+		color:black;
+		width: 100%;
+	}
+
+
+	.nav {
+	width: 100%;
+	margin:0 auto;
+	margin-right: 2px;
+	text-align: center;
+	list-style-type: none;
+	padding: initial;
+	padding-top: 10px;
+	position: relative;
+	margin-top: 11px;
+
+	}
+
+
+
+}

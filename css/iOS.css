@@ -74,7 +74,25 @@ a {
 	letter-spacing: .05rem;
 	text-align: center;
 	color: #696969;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.image-title {
+	padding-top: 40px;
+	text-align: left;
+	font-size: 1.3rem;
+	font-weight: 200;
+	letter-spacing: .01rem;
+	color:#000000;
+}
+.title-container {
+	position: relative;
+	width:75%;
+	max-width:1030px;
+	margin: 0 auto;
+	display:block;
+	margin-bottom: 50px;
+
 }
 
 .center-subtitle {
@@ -174,7 +192,7 @@ a {
 .square-grid2 {
 	position: relative;
 	max-width:484px;
-	width: 34%;
+	width: 48%;
 	margin: 0 auto;
 	display:block;
 	padding-top: 40px
@@ -183,7 +201,7 @@ a {
 .phone-grid2 {
 	position: relative;
 	max-width:664px;
-	width: 47%;
+	width: 62%;
 	margin: 0 auto;
 	display:block;
 	padding-top: 40px
@@ -213,10 +231,11 @@ a {
 .arrow-grid3 {
 	position: relative;
 	max-width:877px;
-	width: 77%;
+	width: 83%;
 	margin: 0 auto;
 	display:block;
-	padding-top: 10px
+	padding-top: 10px;
+	padding-bottom:50px;
 
 }
 
@@ -244,7 +263,7 @@ hr {
 .grid4 {
 	position: relative;
 	max-width:970px;
-	width:68%;
+	width:89%;
 	margin: 0 auto;
 	display:block;
 	padding-top: 80px

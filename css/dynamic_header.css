@@ -20,6 +20,10 @@
 }
 
 
+.ltgrey-bg {
+	background-color: #f3f3f3;
+}
+
 
 /*.header-fixed {
 	z-index: 30;
@@ -97,6 +101,7 @@
 		-webkit-transition: background-color 940ms;
     -moz-transition: background-color 940ms;
 }
+
 .nav-item a{
 	color:black;
 	padding: 1rem;
@@ -132,3 +137,32 @@ a:focus {
 .selected { 
 	background-color: rgba(0,255,255,.8)!important;
  }
+
+
+@media screen and (max-width: 900px) { 
+
+	.title h1 {
+		margin:auto;
+		font-size:20pt;
+		letter-spacing: .01em;
+		font-weight: 600;
+		color:black;
+		position: absolute;
+		margin-top: 11px;
+	}
+
+	.nav {
+	margin:auto;
+	margin-right: 2px;
+	text-align: center;
+	list-style-type: none;
+	padding: initial;
+	padding-top: 10px;
+	position: absolute;
+	margin-top: 11px;
+
+	}
+
+
+
+}
