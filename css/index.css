@@ -57,7 +57,7 @@ a {
 	width:48%;
 	margin-left: .8rem;
 /*	padding-right: 8px;*/
-	border-radius: 2px;
+/*	border-radius: 2px;*/
 	box-shadow: initial;
     height: 100%;
     vertical-align: top;
@@ -173,4 +173,10 @@ a {
 	/*color:#3e3e3e;*/
 	color:#ffffff;
 
+}
+
+.overlay {
+	z-index: 2;
+	width:100%;
+	background-color: rgba(0,0,0, .5);
 }

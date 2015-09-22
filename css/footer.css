@@ -8,7 +8,14 @@
 	color: #696969;
 	padding-top:16px; 
 	padding-bottom:60px
+}
 
+.footer-note {
+	font-weight: 200;
+	font-size: .8rem;
+	letter-spacing: .01rem;
+	text-align: center;
+	color: #696969;
 }
 
 

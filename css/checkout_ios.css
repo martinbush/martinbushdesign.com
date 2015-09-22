@@ -19,9 +19,9 @@ body {
 
 .extra-wide {
 	position: relative;
-	width: 90%;
+	width: 67%;
 	max-width: 1000px;
-	padding-top: 80px:;
+	padding-top: 50px;
 	margin:0 auto;
 	margin-bottom: 100px;
 
@@ -40,7 +40,7 @@ body {
 	max-width:728px;
 	margin: 0 auto;
 	display:block;
-	padding-top: 80px
+	padding-top: 0px
 
 }
 
@@ -62,6 +62,20 @@ body {
 	padding-top: 80px
 
 }
+
+.grid {
+	position: relative;
+	max-width:818px;
+	width:74%;
+	margin: 0 auto;
+	display:block;
+	padding-top: 80px
+
+}
+.grid img {
+	width:230px;
+}
+
 .extra-right {
 	position: relative;
 	/*width:30%;*/
@@ -80,7 +94,7 @@ body {
 }
 
 .extra-wide img {
-	width:230px;
+	width:330px;
 }
 
 .grid3 img {
@@ -95,15 +109,16 @@ body {
 .sequence{
 	position: relative;
 	max-width:860px;
+	width: 83%;
 	margin: 0 auto;
 	display:block;
-	padding-top: 60px;
+	padding-top: 20px;
 
 }
 
 
 .sequence img {
-	width:200px;
+	width:230px;
 }
 
 
@@ -111,6 +126,7 @@ body {
 .grid-two {
 	position: relative;
 	max-width:545px;
+	width: 49%;
 	margin: 0 auto;
 	display:block;
 	padding-top: 80px
@@ -143,7 +159,7 @@ body {
 
 .iphone-one {
 	position: relative;
-	width:230px;
+	width:330px;
 	padding-left: 0px;
 	padding-right: 0px;
 	margin:0;
@@ -152,11 +168,16 @@ body {
 
 .sequence-one {
 	position: relative;
-	width:200px;
-	padding-left: 40px;
-	padding-right: 40px;
+	width:230px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin:0;
 	display:inline-block;
+}
+
+.grid4 .sequence-one {
+		padding-left: 15px;
+	padding-right: 15px;
 }
 
 .centered {
@@ -265,11 +286,11 @@ a:focus {
 }
 
 .hero-gif {
-	padding-left: 52px;
-    padding-top: 66px;
-	position: absolute;
-	z-index: 2;
-	width: 194px;
+	padding-left: 64px;
+    padding-top: 80px;
+    position: absolute;
+    z-index: 2;
+    width: 232px;
 }
 
 .right-container {
@@ -291,6 +312,7 @@ a:focus {
 	margin:0;
 	padding-top: 40px;
 	padding-left: 20px;
+	margin-bottom: 100px;
 }
 
 .center-title {
@@ -428,4 +450,5 @@ a:focus {
 	padding-top: 40px;
 
 }
+
 
