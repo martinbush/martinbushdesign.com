@@ -181,6 +181,11 @@ a {
 
 @media only screen and (max-width: 767px) { 
 
+	.wrapper {
+		width: 100%;
+		padding-top: 34px;
+	}
+
 	.project-square {
 		display: block;
 		width:80%;

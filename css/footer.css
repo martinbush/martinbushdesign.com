@@ -57,3 +57,18 @@
 	margin-bottom: 10px;
 	opacity: .7;
 }
+
+@media only screen and (max-width: 767px) { 
+
+.footer-links {
+	text-align: center;
+	display:inline-block;
+	font-size: .7rem;
+	font-weight: 300;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	letter-spacing: .01em;
+}
+
+}
+

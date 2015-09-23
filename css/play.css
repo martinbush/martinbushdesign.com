@@ -9,20 +9,22 @@
 	height:2200px;
 }
 .right-side {
-	width:50%;
-	float: left;
+	width:47%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 2px;
 }
 
 .left-side {
-	width:50%;
-	float: left;
+	width:47%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .flat-square {
 	display:inline-block;
-	width:98%;
-	margin-left: .8rem;
-	margin-bottom: .2rem;
+	width:100%;
+	margin-bottom: 4px;
 /*	padding-right: 8px;*/
     height: 100%;
     vertical-align: top;
@@ -60,7 +62,8 @@
 @media only screen and (max-width: 767px) { 
 
 	.play-wrapper {
-		width: 80%
+		width: 80%;
+		padding-top: 40px;
 	}
 
 	.right-side {

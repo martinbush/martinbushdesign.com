@@ -143,6 +143,7 @@ a:focus {
 
 	.header {
 		height: 100px;
+		padding-top: 50px;
 	}
 
 	.title h1 {
