@@ -287,23 +287,3 @@ hr {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 900px) { 
-
-	.meat-header {
-		font-size: 2.4rem;
-	}
-	.meat-subheader {
-		font-size: 1.6rem;
-	}
-	
-	.meat-container {
-		width: 100%;
-		padding-top: 0;
-	}
-
-	.meat-margin {
-		margin: 0 8%;
-	}
-
-
-}

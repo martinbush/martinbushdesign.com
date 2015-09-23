@@ -12,7 +12,7 @@ a {
 }
 
 .color1 {
-	background-color: #00CEFC;
+	background-color: #3FADC6;
 }
 
 .color2 {
@@ -40,6 +40,7 @@ a {
 
 
 .wrapper {
+	text-align: center;
 	position: relative;
 	width:75%;
 	max-width:1030px;
@@ -56,7 +57,7 @@ a {
 	display:inline-block;
 	width:48%;
 	margin-left: .8rem;
-/*	padding-right: 8px;*/
+/*	padding-right: 8px;
 /*	border-radius: 2px;*/
 	box-shadow: initial;
     height: 100%;
@@ -151,12 +152,10 @@ a {
 }
 
 .home-project-title{
-	padding-top: 70px;
 	text-align: left;
 	font-size: 1.5rem;
 	font-weight: 700;
 	letter-spacing: .01em;
-	padding-left: 30px;
 	/*color:#3e3e3e;*/
 	color:#ffffff;
 
@@ -167,7 +166,6 @@ a {
 	font-size: 1rem;
 	font-weight: 500;
 	letter-spacing: .01em;
-	padding-left: 30px;
 	/*color:#3e3e3e;*/
 	color:#ffffff;
 
@@ -178,6 +176,25 @@ a {
 	width:100%;
 	background-color: rgba(0,0,0, .5);
 }
+
+.content-block {
+
+	padding-top: 50px;
+	padding-bottom: 300px;
+	padding-left: 48px;
+	padding-right: 30px;
+}
+
+@media only screen and (max-width: 920px) {
+
+	.wrapper {
+		width: 90%;
+		padding-top: 34px;
+	}
+
+}
+
+
 
 @media only screen and (max-width: 767px) { 
 
