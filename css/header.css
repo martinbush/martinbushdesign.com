@@ -32,6 +32,9 @@
 
 /* Header */
 
+.ltgrey-bg {
+	background-color: #f3f3f3;
+}
 
 .nav {
 	margin:auto;

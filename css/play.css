@@ -56,3 +56,39 @@
 	-webkit-transition: all 1s ease; /* For Safari 3.1 to 6.0 */
     transition: all 1s ease;
 }
+
+@media only screen and (max-width: 767px) { 
+
+	.play-wrapper {
+		width: 80%
+	}
+
+	.right-side {
+		width: 100%;
+	}
+
+	.left-side {
+		width: 100%
+	}
+
+	.play-data {
+		display: initial;
+		padding: 0;
+		width: 100%;
+
+	}
+
+	.play-data p{
+		font-size: .6rem;
+	}
+
+	.flat-square {
+		margin:0;
+		width: 100%
+
+	}
+
+}
+
+
+
