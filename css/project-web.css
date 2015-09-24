@@ -170,30 +170,30 @@ a:focus {
 
 .centered {
 	padding-top: 60px;
-	width: 700px;
+	width: 800px;
 	margin: auto;
 }
 
 .centered img {
-	width:660px;
+	width:800px;
 	margin: auto;
 }
 
 .centered-pair {
 	padding-top: 60px;
 	display: block;
-	width: 780px;
+	width: 904px;
 	margin:auto;
 }
 
 .right-web {
-	width: 600px;
+	width: 700px;
 	margin: auto;
 	display: inline;
 }
 
 .phone {
-	width:170px;
+	width:200px;
 	padding-bottom: 20px;
 	display: inline;
 	margin: auto;
