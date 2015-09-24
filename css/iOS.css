@@ -287,3 +287,46 @@ hr {
 	margin: 0 auto;
 }
 
+.extra-margin {
+	margin-left:30px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.arrow-grid3 {
+		width: 60%;
+	}
+	.grid4 {
+		width: 60%;
+	}
+
+	.phone-grid3 {
+		width: 60%;
+	}
+
+	.grid3 {
+		width: 58%;
+
+	}
+
+	.extra-margin {
+		margin-left: 0;
+	}
+
+	.phone-grid2 {
+		width: 82%;
+	}
+
+	.square-grid2 {
+		width:60%;
+	}
+
+	.sequence-arrow {
+		display: none;
+	}
+
+	.sequence-one {
+		padding-left:0;
+		padding-right: 0;
+	}
+}
