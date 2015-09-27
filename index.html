@@ -15,7 +15,7 @@
 <div class="header ltgrey-bg">
 	<div class="title"> 
 		<a href="index.html">
-		<h1>Martin Bush</h1>
+		<h1 class="mini">Martin Bush</h1>
 		</a>
 <!-- 		<h2>UI/UX and Animation</h2> -->
 	</div>
@@ -27,10 +27,12 @@
 		<li class="nav-item">
 			<a href="about.html">About</a></li>
 	</ul>
+	<div class="mini-hero-me" style="background-image:url(images/index/brooklyn.gif)"></div>
+
 </div>
 
 <body>
-	<div class="mini-hero-me" style="background-image:url(images/index/brooklyn.gif)"></div>
+	
 	<!-- <div class="hero-me" style="background-image:url(images/index/brooklyn.gif)"></div> -->
 	<div class="wrapper">
 		<a href="work.html"> 
@@ -88,11 +90,14 @@
 
 <script>
 
-	$(".mini-hero-me").hide();
-	$(".mini-hero-me").click(function(event) {
-		event.preventDefault();
-		$(this).hide();
-	});
+	$(".title > a >  h1").hover(
+  function() {
+    $(".mini-hero-me").show();
+  }, function() {
+    $(".mini-hero-me").hide();
+  }
+);
+
 
 </script>
 </body>

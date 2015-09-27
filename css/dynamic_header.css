@@ -63,6 +63,18 @@
 	margin-top: 11px;
 }
 
+.mini-hero-me {
+    width: 179px;
+    margin-left: 100px;
+    margin-top: -40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 158px;
+    display: none;
+}
+
+
 /*.title h2 {
 	margin:auto;
 	text-align: center;
