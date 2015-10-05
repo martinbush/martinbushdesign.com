@@ -112,6 +112,7 @@ a {
 	background-color: #f15a5f;
 	text-align: center;
 	margin: 20px auto;
+	margin-top: 40px;
     border-radius: 4px;
     width: 200px;
     color: #ffffff;
@@ -251,7 +252,7 @@ a {
 
 hr {
 	border: 0;
-     background: #666;
+     background: #DFDFDF;
      width: 75%; 
      height: 1px;
 }
@@ -285,6 +286,13 @@ hr {
 .hero-phone {
 	width: 400px;
 	margin: 0 auto;
+}
+
+.hero-gif {
+    width: 258px;
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 71px;
 }
 
 .extra-margin {
