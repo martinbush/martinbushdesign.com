@@ -403,3 +403,7 @@ a:focus {
 	padding-top: 40px;
 	padding-left: 20px;
 }
+
+@media only screen and (max-width: 767px) {
+
+}
