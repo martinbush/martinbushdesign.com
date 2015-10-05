@@ -301,15 +301,35 @@ hr {
 
 @media only screen and (max-width: 767px) {
 
-	.arrow-grid3 {
-		width: 60%;
-	}
-	.grid4 {
-		width: 60%;
+	.hero-ios {
+		width:375px;
 	}
 
+	.hero-phone {
+		width:375px;
+	}
+
+	.hero-gif {
+	    width: 243px;
+	    position: absolute;
+	    margin-top: 83px;
+	    margin-left: 66px;
+}
+
+	.arrow-grid3 {
+		width: 61%;
+	}
+	.grid4 {
+		width: 64%;
+	}
+
+	.grid2 {
+	    width: 61%;
+	}
+
+
 	.phone-grid3 {
-		width: 60%;
+		width: 64%;
 	}
 
 	.grid3 {
@@ -322,11 +342,15 @@ hr {
 	}
 
 	.phone-grid2 {
-		width: 82%;
+		width: 88%;
 	}
 
 	.square-grid2 {
-		width:60%;
+		width:64%;
+	}
+
+	.arrow-grid2 {
+		width: 61%;
 	}
 
 	.sequence-arrow {

@@ -190,6 +190,11 @@ a {
 
 @media only screen and (max-width: 767px) { 
 
+	.content-block {
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+
 	.wrapper {
 		width: 100%;
 		padding-top: 34px;
