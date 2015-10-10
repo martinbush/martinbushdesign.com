@@ -408,7 +408,16 @@ a:focus {
 	width:840px;
 }
 
+.the-gif {
+	padding-bottom:50px;
+	width: 430px;
+}
+
 @media only screen and (max-width: 767px) {
+
+	.centered {
+		width: 100%;
+	}
 
 	.centered img {
 		width: 400px;
@@ -434,6 +443,10 @@ a:focus {
 
 	.too-long {
 		font-size: 2.1rem;
+	}
+
+	.the-gif {
+		width: 400px;
 	}
 
 }
