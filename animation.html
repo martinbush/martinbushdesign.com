@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
+<link rel="stylesheet" type="text/css" href="css/meat.css">
+<link rel="stylesheet" type="text/css" href="css/project-web.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+</head>
+<div class="header">
+	<div class="title"> 
+		<a href="index.html">
+		<h1>Martin Bush</h1>
+		</a>
+<!-- 		<h2>UI/UX and Animation</h2> -->
+
+	</div>
+	<ul class="nav">
+		<li class="nav-item">
+			<a href="work.html">Work</a></li>
+		<li class="nav-item">
+			<a href="play.html">Play</a></li>
+		<li class="nav-item">
+			<a href="about.html">About</a></li>
+	</ul>
+</div>
+<body>
+
+<div class="meat-container">
+	<div class="meat-margin">
+	<div class="meat-header too-long">Animations</div>
+	<div class="meat-subheader"> UX and Visual Design </div>
+	<div class="meat-smallheader"> Overview </div>
+	<div class="meat-text"> 
+		Experiment with conversational UX. Can we make printing a more personal experience? What would "white-glove-service" look like for printing? Can we run a printing service through iMessage. Mock-up a webpage that explains and introduces the service.
+	</div>
+	<div class="meat-smallheader"> Skills and Tools </div>
+	<div class="meat-text"> 
+	HTML, CSS, Javascript, Jquery
+</div>
+
+</div>
+</div>
+
+<div class="white-bg">
+
+	<div class="image-holder">
+          <img class="video-frame frame1" src="images/work/animation/photobookinteractive/Frame1.jpg"/>
+          <img class="video-frame frame2" src="images/work/animation/photobookinteractive/Frame2.jpg"/>
+          <img class="video-frame frame3" src="images/work/animation/photobookinteractive/Frame3.jpg"/>
+          <img class="video-frame frame4" src="images/work/animation/photobookinteractive/Frame4.jpg"/>
+          <img class="video-frame frame5" src="images/work/animation/photobookinteractive/Frame5.jpg"/>
+          <img class="video-frame frame6" src="images/work/animation/photobookinteractive/Frame6.jpg"/>
+          <img class="video-frame frame7" src="images/work/animation/photobookinteractive/Frame7.jpg"/>
+          <img class="video-frame frame8" src="images/work/animation/photobookinteractive/Frame8.jpg"/>
+          <img class="video-frame frame9" src="images/work/animation/photobookinteractive/Frame9.jpg"/>
+          <img class="video-frame frame10" src="images/work/animation/photobookinteractive/Frame10.jpg"/>
+          <img class="video-frame frame11" src="images/work/animation/photobookinteractive/Frame11.jpg"/>
+      </div>
+ 	<div class="image-holder">
+          <img class="video-frameb frame1b" src="images/work/animation/squares-gif-ctrl/Frame1.jpg"/>
+          <img class="video-frameb frame2b" src="images/work/animation/squares-gif-ctrl/Frame2.jpg"/>
+          <img class="video-frameb frame3b" src="images/work/animation/squares-gif-ctrl/Frame3.jpg"/>
+          <img class="video-frameb frame4b" src="images/work/animation/squares-gif-ctrl/Frame4.jpg"/>
+          <img class="video-frameb frame5b" src="images/work/animation/squares-gif-ctrl/Frame5.jpg"/>
+          <img class="video-frameb frame6b" src="images/work/animation/squares-gif-ctrl/Frame6.jpg"/>
+          <img class="video-frameb frame7b" src="images/work/animation/squares-gif-ctrl/Frame7.jpg"/>
+          <img class="video-frameb frame8b" src="images/work/animation/squares-gif-ctrl/Frame8.jpg"/>
+          <img class="video-frameb frame9b" src="images/work/animation/squares-gif-ctrl/Frame9.jpg"/>
+          <img class="video-frameb frame10b" src="images/work/animation/squares-gif-ctrl/Frame10.jpg"/>
+          <img class="video-frameb frame11b" src="images/work/animation/squares-gif-ctrl/Frame11.jpg"/>
+      </div>
+
+
+</div>
+
+<div class="footer-wrapper">
+	<ul class="footer">
+		<li class="footer-links">
+			<a href="http://www.linkedin.com/in/martincbush" target="_blank">LinkedIn</a></li>
+		<li class="footer-links">
+			<a href="https://www.behance.net/martinbushdesign" target="_blank">Behance</a></li>
+		<li class="footer-links">
+			<a href="http://www.martinbushdesign.tumblr.com" target="_blank">Tumblr</a></li>
+		<li class="footer-links">
+			<a href="http://instagram.com/martybush" target="_blank">Instagram</a></li>
+		<li class="footer-links">
+			<a href="##">Resume</a></li>
+	</ul>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+    $(window).mousemove(getMousePosition);
+
+    var mouseX;
+    var mouseY;
+    var imageTop;
+    var imageBottom;
+    var imageLeft;
+    var imageRight;
+
+    var keyframe1;
+    var keyframe2;
+    var keyframe3;
+    var keyframe4;
+    var keyframe5;
+    var keyframe6;
+    var keyframe7;
+    var keyframe8;
+    var keyframe9;
+    var keyframe10;
+    var keyframe11;
+
+    var imageTop = $(".video-frame").offset().top;
+    var imageLeft = $(".video-frame").offset().left;
+    var imageBottom = imageTop + $(".video-frame").height();
+    var imageRight = imageLeft + $(".video-frame").width();
+
+    var imageTopb = $(".video-frameb").offset().top;
+    var imageLeftb = $(".video-frameb").offset().left;
+    var imageBottomb = imageTopb + $(".video-frameb").height();
+    var imageRightb = imageLeftb + $(".video-frameb").width();
+
+    var keyframe1 = imageLeft + 80;
+    var keyframe2 = imageLeft + 160;
+    var keyframe3 = imageLeft + 240;
+    var keyframe4 = imageLeft + 320;
+    var keyframe5 = imageLeft + 400;
+    var keyframe6 = imageLeft + 480;
+    var keyframe7 = imageLeft + 560;
+    var keyframe8 = imageLeft + 720;
+    var keyframe9 = imageLeft + 800;
+    var keyframe10 = imageLeft + 880;
+    var keyframe11 = imageLeft + 960;
+
+    $(window).load(init);
+
+    function init(){
+        mouseX = 0;
+        mouseY = 0;
+
+          imageTop = $(".video-frame").offset().top;
+          imageBottom = imageTop + $(".video-frame").height();
+          imageLeft = $(".video-frame").offset().left;
+          imageRight = imageLeft + $(".video-frame").width();
+    }
+
+    function getMousePosition(event){
+        mouseX = event.pageX;
+        mouseY = event.pageY;
+
+        $(".video-frame").css("z-index","0");
+        if(mouseX >imageLeft && mouseX <keyframe1 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame1").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe2 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame2").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe3 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame3").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe4 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame4").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe5 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame5").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe6 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame6").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe7 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame7").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe8 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame8").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe9 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame9").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe10 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame10").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe11 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame11").css("z-index","1");
+        }
+
+         $(".video-frameb").css("z-index","0");
+        if(mouseX >imageLeftb && mouseX <keyframe1 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame1b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe2 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame2b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe3 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame3b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe4 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame4b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe5 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame5b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe6 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame6b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe7 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame7b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe8 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame8b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe9 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame9b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe10 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame10b").css("z-index","1");
+        } else if(mouseX >imageLeftb && mouseX <keyframe11 && mouseY >imageTopb &&  mouseY <imageBottomb){
+            $(".frame11b").css("z-index","1");
+        }
+    }
+
+  </script>
+</html>
