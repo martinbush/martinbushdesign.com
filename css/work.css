@@ -1,0 +1,173 @@
+body {
+	background-color: #f3f3f3;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+
+}
+
+a {
+	color:#000000;
+	text-decoration: none;
+}
+
+.wrapper {
+	width:80%;
+	text-align: center;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 100%;
+    padding:0;
+    padding-top: 50px;
+    padding-bottom: 1.80em;
+    display: block;
+}
+
+
+.project-image {
+	width:60%;
+	height: auto;
+	display: inline-block;
+	float:left;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+ .project > img {
+	width: 58%;
+	display: inline-block;
+	padding: 40px 20px 30px 20px;
+	height: auto;
+	display: inline-block;
+	float:left;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+.project > video {
+	width: 58%;
+	display: inline-block;
+	padding: 60px 20px 40px 20px;
+	height: auto;
+	display: inline-block;
+	float:left;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	border-radius: 4px;
+
+}
+
+.project:hover img{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.18),0 5px 5px 0 rgba(0,0,0,0.22);
+    -webkit-transition: all 300ms ease-out; /* For Safari 3.1 to 6.0 */
+    transition: all 300ms ease-out;
+}
+
+.project:hover .work-project-title{
+    	color:#009688;
+}
+
+.project-titles {
+	display: inline-block;
+	overflow: hidden;
+	padding-left: 4%;
+	padding-top: 140px;
+	text-align: left;
+	float: left;
+	vertical-align: middle;
+	position: relative;
+}
+
+.work-project-title {
+	font-size: 2.2rem;
+	color:#414042;
+	font-weight: 200;
+}
+
+.work-project-subtitle {
+	font-size: .9rem;
+	color:#808080;
+	line-height: 2rem;
+	letter-spacing: .01rem;
+}
+
+.white {
+	background-color: #ffffff;
+}
+.grey-200 {
+	background-color: #e7e7e7;
+}
+.pink-50 {
+	background-color: #FCE4EC
+}
+.image-holder {
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: auto;
+    padding-top: 60px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-frame {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.mobile-screen-shot {
+	width:25% !important;
+	padding: 60px 20px 60px 20px !important;
+	display: inline !important;
+	overflow: hidden; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+.project > img {
+	width: 80%;
+	display: inline-block;
+	padding: 60px 40px 40px 40px;
+	height: auto;
+	display: inline-block;
+	float: initial;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	border-radius: 4px;
+
+}
+
+.project-titles {
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	float: initial;
+
+}
+
+}
+
+
+
+@media only screen and (max-width: 767px) { 
+
+	
+
+}
+
+
+
+

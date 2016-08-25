@@ -23,6 +23,8 @@
 	height: 260px;
 	width:100%;
 	background-color: #FFFFFF;
+	display: flex;
+	position: relative;
 	/*border-top:#afafaf 1px solid;*/
 }
 
