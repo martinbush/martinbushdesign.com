@@ -26,9 +26,10 @@ a {
 
 
 .project-image {
-	width:60%;
-	height: auto;
+	width: 58%;
 	display: inline-block;
+	padding: 60px 20px 40px 20px;
+	height: auto;
 	float:left;
 	vertical-align: middle;
 	margin-bottom: 30px;
@@ -37,7 +38,6 @@ a {
 
  .project > img {
 	width: 58%;
-	display: inline-block;
 	padding: 40px 20px 30px 20px;
 	height: auto;
 	display: inline-block;
@@ -60,7 +60,27 @@ a {
 
 }
 
-.project:hover img{
+#combo-cell {
+	height: auto;
+	display: inline-block;
+	float:left;
+	width: 60.9%;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.project:hover > img{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.18),0 5px 5px 0 rgba(0,0,0,0.22);
+    -webkit-transition: all 300ms ease-out; /* For Safari 3.1 to 6.0 */
+    transition: all 300ms ease-out;
+}
+.project:hover #combo-cell{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.18),0 5px 5px 0 rgba(0,0,0,0.22);
+    -webkit-transition: all 300ms ease-out; /* For Safari 3.1 to 6.0 */
+    transition: all 300ms ease-out;
+}
+
+.project:hover video{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.18),0 5px 5px 0 rgba(0,0,0,0.22);
     -webkit-transition: all 300ms ease-out; /* For Safari 3.1 to 6.0 */
     transition: all 300ms ease-out;
@@ -73,7 +93,7 @@ a {
 .project-titles {
 	display: inline-block;
 	overflow: hidden;
-	padding-left: 4%;
+	padding-left: 5%;
 	padding-top: 140px;
 	text-align: left;
 	float: left;
@@ -82,7 +102,7 @@ a {
 }
 
 .work-project-title {
-	font-size: 2.2rem;
+	font-size: 2.0rem;
 	color:#414042;
 	font-weight: 200;
 }
@@ -92,7 +112,18 @@ a {
 	color:#808080;
 	line-height: 2rem;
 	letter-spacing: .01rem;
+
 }
+
+.work-project-skills {
+	font-size: .9rem;
+	padding-top: 20px;
+	color:#808080;
+	line-height: 2rem;
+	letter-spacing: .01rem;
+	font-weight: 100;
+}
+
 
 .white {
 	background-color: #ffffff;
@@ -101,17 +132,22 @@ a {
 	background-color: #e7e7e7;
 }
 .pink-50 {
-	background-color: #FCE4EC
+	background-color: #FCE4EC;
+}
+
+.grey-ce {
+	background-color: #cecece;
 }
 .image-holder {
-    margin: 0 auto;
     vertical-align: middle;
     margin-top: auto;
-    padding-top: 60px;
-    width: 80%;
-    height: 80%;
+    width:61%;
+    height:550px;
     position: relative;
     overflow: hidden;
+	border-radius: 4px;
+	float: left;
+	margin-bottom: 30px;
 }
 
 .video-frame {

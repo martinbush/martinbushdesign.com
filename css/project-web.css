@@ -456,6 +456,49 @@ a:focus {
 
 }
 
+.mobile-hero {
+	width: 70%;
+	height: 700px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.mobile-hero img {
+	width: 250px;
+	margin-left: 30px;
+
+}
+.grey-200 {
+	background-color: #e7e7e7;
+}
+.pink-50 {
+	background-color: #FCE4EC;
+}
+.side-by-side-wrapper {
+	width: 80%;
+	margin:0 auto;
+	display: block;
+	position: relative;
+}
+
+.artboard{
+	width: 700px;
+	float: left;
+}
+
+.rightside-desc {
+	float: left;
+	padding-top: 80px;
+	padding-left: 10px;
+}
+
+.artboard-mobile img{
+	width: 260px;
+}
+
+
 @media only screen and (max-width: 767px) {
 
 	.centered {
