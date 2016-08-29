@@ -458,10 +458,11 @@ a:focus {
 
 .mobile-hero {
 	width: 70%;
-	height: 700px;
+	height: 500px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
+	padding-top: 50px;
 
 }
 
@@ -481,21 +482,30 @@ a:focus {
 	margin:0 auto;
 	display: block;
 	position: relative;
+		vertical-align: center;
+
 }
 
 .artboard{
-	width: 700px;
+	width: 60%;
 	float: left;
 }
 
 .rightside-desc {
 	float: left;
-	padding-top: 80px;
+	padding-top: 30px;
 	padding-left: 10px;
 }
 
+.artboard-mobile {
+	display: inline-block;
+}
 .artboard-mobile img{
 	width: 260px;
+	margin-left: 20px;
+}
+.artboard img{
+	width: 650px;
 }
 
 
