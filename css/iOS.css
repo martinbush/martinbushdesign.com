@@ -32,6 +32,7 @@ a {
 }
 .mini-title {
 	padding-top: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 	font-size: .9rem;
 	font-weight: 600;
@@ -45,7 +46,7 @@ a {
 }
 
 .mini-subtitle {	
-	padding-top: 5px;
+	padding-top: 10px;
 	text-align: center;
 	font-size: .8rem;
 	font-weight: 200;
@@ -269,6 +270,18 @@ hr {
 	display:block;
 	padding-top: 80px
 
+}
+
+.side-scroll {
+	position: relative;
+    max-width: 1060px;
+    width: auto;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: block;
+    padding-top: 80px;
 }
 
 .centered {
