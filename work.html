@@ -181,12 +181,11 @@
     var keyframe10 = imageLeft + 880;
     var keyframe11 = imageLeft + 960;
 
-    var y;
-    window.addEventListener("deviceorientation", handleOrientation, true);
-    function handleOrientation(event) {
-	   y = event.gamma; // In degree in the range [-90,90]
 
-	  // Do stuff with the new orientation data
+    
+    function handleOrientation(event) {
+
+	  var y = event.gamma
 
 	  $(".video-frame").css("z-index","0");
 	   if(y == 0){
@@ -194,8 +193,10 @@
         } else if (y==90){
         	$(".frame11").css("z-index","1");
         }
+	
 	}
 
+	window.addEventListener("deviceorientation", handleOrientation, true);
 
     $(window).load(init);
 
