@@ -93,18 +93,25 @@ a {
 .project-titles {
 	display: inline-block;
 	overflow: hidden;
-	padding-left: 5%;
+	padding-left: 4%;
 	padding-top: 140px;
+	width: 30%;
 	text-align: left;
 	float: left;
 	vertical-align: middle;
 	position: relative;
+		white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-project-title {
 	font-size: 2.0rem;
 	color:#414042;
 	font-weight: 200;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-project-subtitle {
@@ -182,11 +189,23 @@ a {
 .psios {
 	width: 500px;
 }
+.greetings {
+    width: 80% !important;
+    padding: 0 0px 0px 0px !important;
+    display: inline !important;
+    overflow: hidden;
+    border-radius: 4px;
+
+}
 
 @media only screen and (max-width: 1000px) {
 
 	#pure-image {
-		width: 95%;
+		width: 55%;
+	}
+
+	.greetings {
+		width:70% !important;
 	}
 
 .image-holder {
@@ -232,7 +251,6 @@ a {
 	width: 80%;
 	padding: 60px 60px 40px 60px;
 	height: auto;
-	padding-bottom: 50%;
 	display: inline-block;
 	float: initial;
 	vertical-align: middle;
@@ -268,7 +286,6 @@ a {
 	width: 98%;
 }
 .greetings {
-
     width: 90% !important;
     padding: 0 0px 0px 0px !important;
     display: inline !important;
@@ -276,6 +293,7 @@ a {
     border-radius: 4px;
 
 }
+
 #pure-image {
 	width:98%;
 }
