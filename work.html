@@ -181,11 +181,11 @@
     var keyframe10 = imageLeft + 880;
     var keyframe11 = imageLeft + 960;
 
-
+    var y 
     
     function handleOrientation(event) {
 
-	  var y = event.gamma;
+	  y = event.gamma;
 
 	  $(".video-frame").css("z-index","0");
 	   if( -50 > y > -40){
@@ -196,7 +196,7 @@
         	$(".frame1").css("z-index","1");
         	console.log(y);
         }
-        else if (-40 > y > 30 ){
+        else if (-40 > y > -30 ){
         	$(".frame10").css("z-index","1");
         	console.log("frame10");
         }
@@ -226,14 +226,10 @@
         }
 
         console.log("sucka");
+        console.log(y);
 
 	
 	}
-
-	$( document ).ready(function() {
-		var y = event.gamma;
-		console.log(y);
-	});
 
 	window.addEventListener("deviceorientation", handleOrientation, true);
 
