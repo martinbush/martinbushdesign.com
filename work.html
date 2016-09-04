@@ -188,20 +188,18 @@
 	  y = event.gamma;
 
 	  $(".video-frame").css("z-index","0");
-	   if( 10 > y  && y > -10 ){
+	   if( 10 > y  && y > (-10) ){
             $(".frame6").css("z-index","1");
-            console.log("frame6");
-            console.log(y);
         } else if (10 < y && y < 20){
         	$(".frame8").css("z-index","1");
         	console.log(y);
         } else if (20 < y && y < 30){
         	$(".frame9").css("z-index","1");
         	console.log(y);
-        } else if (y > (-10) && y < (-20){
+        } else if (y > (-10) && y < (-20)){
         	$(".frame4").css("z-index","1");
         	console.log(y);
-        } else if ( y > (-20) && y < (-30){
+        } else if ( y > (-20) && y < (-30)){
         	$(".frame2").css("z-index","1");
         	console.log(y);
         } else if (y < -30){
