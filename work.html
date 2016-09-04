@@ -188,15 +188,16 @@
 	  y = event.gamma;
 
 	  $(".video-frame").css("z-index","0");
-	   if( 50 > y ){
+	   if( 10 > y ){
             $(".frame11").css("z-index","1");
             console.log("frame11");
             console.log(y);
-        } else if (50 < y ){
+        } else if (10 < y ){
         	$(".frame9").css("z-index","1");
         	console.log(y);
-        }
-        console.log(y);
+        }else if (20 < y < 30){
+        	$(".frame5").css("z-index","1");
+        	console.log(y);
 
 	
 	}
