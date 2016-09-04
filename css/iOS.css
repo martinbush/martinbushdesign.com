@@ -78,6 +78,16 @@ a {
 	padding-bottom: 10px;
 }
 
+.center-title-bold {
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 2.0rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    color: #4a4a4a;
+    padding-bottom: 30px;
+}
+
 .image-title {
 	padding-top: 40px;
 	text-align: left;
@@ -273,15 +283,15 @@ hr {
 }
 
 .side-scroll {
-	position: relative;
-    max-width: 1060px;
+    position: relative;
+    max-width: 1300px;
     width: auto;
     margin: 0 auto;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     display: block;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .centered {
