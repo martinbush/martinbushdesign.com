@@ -144,6 +144,7 @@
 <script type="text/javascript">
 
     $(window).mousemove(getMousePosition);
+    window.addEventListener("deviceorientation", handleOrientation, true);
 
     var mouseX;
     var mouseY;
@@ -181,7 +182,19 @@
     var keyframe10 = imageLeft + 880;
     var keyframe11 = imageLeft + 960;
 
-    
+    function handleOrientation(event) {
+	  var absolute = event.absolute;
+	  var alpha    = event.alpha;
+	  var beta     = event.beta;
+	  var gamma    = event.gamma;
+
+	    var y = event.gamma; // In degree in the range [-90,90]
+
+	  // Do stuff with the new orientation data
+	   if(y == 0){
+            $(".frame6").css("z-index","1");
+        }
+	}
 
     $(window).load(init);
 
@@ -231,8 +244,9 @@
         } else if(mouseX >imageLeft && mouseX <keyframe11 && mouseY >imageTop &&  mouseY <imageBottom){
             $(".frame11").css("z-index","1");
         }
-
     }
+
+
 
   </script>
 </html>
