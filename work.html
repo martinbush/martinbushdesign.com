@@ -188,11 +188,12 @@
 	  var y = event.gamma
 
 	  $(".video-frame").css("z-index","0");
-	   if(y == 0){
+	   if(y < 0){
             $(".frame6").css("z-index","1");
-        } else if (y==90){
+        } else if (y > 0){
         	$(".frame11").css("z-index","1");
         }
+       console.log(y)
 	
 	}
 
