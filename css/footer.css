@@ -23,8 +23,11 @@
 	height: 260px;
 	width:100%;
 	background-color: #FFFFFF;
-	display: flex;
+	display:inline-block;
 	position: relative;
+	right: 0;
+  	bottom: 0;
+  	left: 0;
 	/*border-top:#afafaf 1px solid;*/
 }
 
