@@ -179,6 +179,10 @@ a {
 	width:60.9%
 }
 
+.psios {
+	width: 500px;
+}
+
 @media only screen and (max-width: 1000px) {
 
 	#pure-image {
@@ -228,7 +232,7 @@ a {
 	width: 80%;
 	padding: 60px 60px 40px 60px;
 	height: auto;
-	padding-bottom: 50%
+	padding-bottom: 50%;
 	display: inline-block;
 	float: initial;
 	vertical-align: middle;
@@ -252,7 +256,87 @@ a {
 
 @media only screen and (max-width: 767px) { 
 
-	
+#combo-cell {
+	width: 98%;
+	padding: 0;
+	height: auto;
+	margin-bottom: 10px;
+
+}
+
+#genie {
+	width: 98%;
+}
+.greetings {
+
+    width: 90% !important;
+    padding: 0 0px 0px 0px !important;
+    display: inline !important;
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+#pure-image {
+	width:98%;
+}
+.psios {
+	width: 200px;
+}
+
+.image-holder {
+	margin-bottom: 10px;
+	width: 98%;
+}
+.project > img {
+	width: 85%;
+	padding: 30px 30px 20px 30px;
+	height: auto;
+	display: inline-block;
+	float: initial;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.project > video {
+	padding: 10px 10px;
+	width: 93%;
+	margin-bottom: 10px;
+}
+
+.project-titles {
+	padding-left: 0;
+	width: 95%;
+	padding-top: 0px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+	float: initial;
+
+}
+
+.work-project-title {
+	font-size: 1.4rem;
+	color:#414042;
+	font-weight: 400;
+}
+
+.work-project-subtitle {
+	font-size: .9rem;
+	color:#808080;
+	line-height: 1.6rem;
+	letter-spacing: .01rem;
+
+}
+
+.work-project-skills {
+	font-size: .9rem;
+	padding-top: 20px;
+	color:#808080;
+	line-height: 2rem;
+	letter-spacing: .01rem;
+	font-weight: 100;
+	display: none;
+}
 
 }
 

@@ -509,7 +509,10 @@ a:focus {
 }
 
 
+
 @media only screen and (max-width: 767px) {
+
+
 
 	.centered {
 		width: 100%;
@@ -517,6 +520,8 @@ a:focus {
 
 	.centered img {
 		width: 400px;
+		text-align: center;
+	    display: block;
 	}
 
 	.centered-pair {
