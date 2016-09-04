@@ -188,17 +188,30 @@
 	  y = event.gamma;
 
 	  $(".video-frame").css("z-index","0");
-	   if( 10 > y ){
-            $(".frame11").css("z-index","1");
-            console.log("frame11");
+	   if( 10 > y > -10 ){
+            $(".frame6").css("z-index","1");
+            console.log("frame6");
             console.log(y);
-        } else if (10 < y ){
+        } else if (10 < y < 20){
+        	$(".frame8").css("z-index","1");
+        	console.log(y);
+        } else if (20 < y < 30){
         	$(".frame9").css("z-index","1");
         	console.log(y);
-        }else if (20 < y < 30){
-        	$(".frame5").css("z-index","1");
+        } else if (-10 < y < -20){
+        	$(".frame4").css("z-index","1");
+        	console.log(y);
+        } else if (-20 < y < -30){
+        	$(".frame4").css("z-index","1");
+        	console.log(y);
+        } else if (-30 < y){
+        	$(".frame1").css("z-index","1");
+        	console.log(y);
+        } else if (30 < y){
+        	$(".frame11").css("z-index","1");
         	console.log(y);
         }
+
 	
 	}
 
