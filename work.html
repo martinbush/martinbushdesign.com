@@ -182,10 +182,9 @@
     var keyframe11 = imageLeft + 960;
 
     var y;
-
+    window.addEventListener("deviceorientation", handleOrientation, true);
     function handleOrientation(event) {
-
-	    var y = event.gamma; // In degree in the range [-90,90]
+	   y = event.gamma; // In degree in the range [-90,90]
 
 	  // Do stuff with the new orientation data
 
@@ -197,7 +196,6 @@
         }
 	}
 
-	window.addEventListener("deviceorientation", handleOrientation, true);
 
     $(window).load(init);
 
