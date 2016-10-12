@@ -20,6 +20,7 @@
 <script type="text/javascript">
 
 	var compassdir
+	var roundcompassdir;
 	console.log(4);
 
     window.addEventListener('deviceorientation',  handleOrientation, true);
@@ -28,15 +29,19 @@
   // Listen for the deviceorientation event and handle the raw data
 
 	    var compassdir;
+	    var roundcompassdir;
 
 	    if(event.webkitCompassHeading) {
 
 	      // Apple works only with this, alpha doesn't work
 	      compassdir = event.webkitCompassHeading;  
-
-	      $("#color-me").css("background-color","hsl(compassdir,100%,50%)");
 	      console.log(compassdir);
-	      console.log(5);
+	      Math.round(compassdir) = roundcompassdir
+	      console.log(roundcompassdir);
+
+	      $("#color-me").css("background-color","hsl(roundcompassdir,100%,50%)");
+	      
+	      console.log(done);
 
 
 	    }
