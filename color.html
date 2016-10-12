@@ -22,11 +22,11 @@
 	var compassdir
 	console.log(4);
 
-    // window.addEventListener('deviceorientation',  handleOrientation, true);
+    window.addEventListener('deviceorientation',  handleOrientation, true);
 
 	function handleOrientation(event) {
   // Listen for the deviceorientation event and handle the raw data
-	  window.addEventListener('deviceorientation', function(eventData) {
+
 	    var compassdir;
 
 	    if(event.webkitCompassHeading) {
@@ -41,7 +41,7 @@
 
 	    }
 	    else compassdir = event.alpha;
-	  });
+	  
 	}
 
     
