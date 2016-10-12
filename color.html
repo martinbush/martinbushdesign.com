@@ -19,7 +19,7 @@
 
 <script type="text/javascript">
 
-	var compassdir
+	var compassdir;
 	var roundcompassdir;
 	console.log(4);
 
@@ -35,9 +35,10 @@
 
 	      // Apple works only with this, alpha doesn't work
 	      compassdir = event.webkitCompassHeading;  
-	      console.log("compass: "compassdir);
-	      Math.round(compassdir) = roundcompassdir
-	      console.log("round: "roundcompassdir);
+
+	      console.log(compassdir);
+	      roundcompassdir = Math.round(compassdir);
+	      console.log(roundcompassdir);
 
 	      $("#color-me").css("background-color","hsl(roundcompassdir,100%,50%)");
 	      
@@ -45,8 +46,8 @@
 
 
 	    }
-	    else compassdir = event.alpha;
-	  
+
+	    else compassdir = event.alpha; 
 	}
 
     
