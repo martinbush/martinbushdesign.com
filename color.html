@@ -35,6 +35,14 @@
 	    var compassdir;
 	    var roundcompassdir;
 
+	    	var lightness
+			var roundlightness
+
+			lightness = event.beta;
+			roundlightness = Math.round(lightness);
+
+			
+
 	    if(event.webkitCompassHeading) {
 
 	      // Apple works only with this, alpha doesn't work
@@ -54,16 +62,11 @@
 
 	    if ($("#color-me").on("vmousedown",function(){
 
-			var lightness
-			var roundlightness
-
-			lightness = event.beta;
-			roundlightness = Math.round(lightness);
-
 			console.log("tap11");
 			console.log(roundlightness);
 
 	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',10%,'+roundlightness+'%)');
+
 
 	 		console.log("done-lighttoo");
 
