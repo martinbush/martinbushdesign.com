@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<div id="color-me" class="color-me" style="width:100%; height:100%; background-color:hsl(0,100%,50%);display:block;position:absolute;">
+	<div id="color-me" class="color-me" style="width:100%; height:100%; background-color:hsl(0,100%,50%);display:block;position:absolute;overflow:hidden;">
 	</div>
 </body>
 
@@ -34,12 +34,6 @@
 
 	    var compassdir;
 	    var roundcompassdir;
-	 //    var lightness;
-
-	 //    lightness = event.beta;
-
-		// roundcompassdir = Math.round(compassdir);
-		// console.log(roundlightness);
 
 	    if(event.webkitCompassHeading) {
 
@@ -57,13 +51,8 @@
 	    }
 
 	    else compassdir = event.alpha; 
-	}
-		
 
-
-	function handleOrientation(event) {
-
-		if ($("#color-me").on("vmousedown",function(){
+	    if ($("#color-me").on("vmousedown",function(){
 
 			var lightness
 			var roundlightness
@@ -81,6 +70,13 @@
 		})
 			);
 	}
+		
+
+
+	// function handleOrientation(event) {
+
+		
+	// }
 
 	
     
