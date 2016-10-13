@@ -54,35 +54,31 @@
 	      
 	      console.log("done");
 
-
-		// $("#color-me").on("vmousedown",function(){
-
-		// 	console.log("tap");
-
-	 // 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
-
-		// });
-
 	    }
 
 	    else compassdir = event.alpha; 
 	}
 		$("#color-me").on("vmousedown",function(){
 
-			console.log("tap");
+			var lightness
+			var roundlightness
+
+			lightness = event.beta;
+			roundlightness = Math.round(lightness);
+
+			console.log("tap9");
 			console.log(roundlightness);
-			
+
 			function handleOrientation(event) {
 
 				var lightness;
 
 			    lightness = event.beta;
 				roundlightness = Math.round(lightness);
-				console.log(roundlightness);
-
-					
+				console.log(roundlightness);	
 
 	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
+	 		console.log("done-lighttoo");
 	 	}
 
 		});
