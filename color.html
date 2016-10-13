@@ -24,6 +24,9 @@
 	var roundcompassdir;
 	console.log(7);
 
+	var lightness
+	var roundlightness
+
     window.addEventListener('deviceorientation',  handleOrientation, true);
 
 	function handleOrientation(event) {
@@ -31,11 +34,12 @@
 
 	    var compassdir;
 	    var roundcompassdir;
-	    var lightness;
+	 //    var lightness;
 
-	    lightness = event.beta;
-		roundlightness = Math.round(lightness);
-		console.log(roundlightness);
+	 //    lightness = event.beta;
+
+		// roundcompassdir = Math.round(compassdir);
+		// console.log(roundlightness);
 
 	    if(event.webkitCompassHeading) {
 
@@ -59,9 +63,6 @@
 
 		// });
 
-		
-
-
 	    }
 
 	    else compassdir = event.alpha; 
@@ -69,8 +70,18 @@
 		$("#color-me").on("vmousedown",function(){
 
 			console.log("tap");
+			function handleOrientation(event) {
+
+				var lightness;
+
+			    lightness = event.beta;
+				roundlightness = Math.round(lightness);
+				console.log(roundlightness);
+
+					
 
 	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
+	 	}
 
 		});
     
