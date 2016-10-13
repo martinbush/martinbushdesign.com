@@ -58,7 +58,13 @@
 
 	    else compassdir = event.alpha; 
 	}
-		$("#color-me").on("vmousedown",function(){
+		
+
+
+			function handleOrientation(event) {
+
+			$("#color-me").on("vmousedown",function(){
+
 
 			var lightness
 			var roundlightness
@@ -69,19 +75,13 @@
 			console.log("tap9");
 			console.log(roundlightness);
 
-			function handleOrientation(event) {
-
-				var lightness;
-
-			    lightness = event.beta;
-				roundlightness = Math.round(lightness);
-				console.log(roundlightness);	
-
 	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
 	 		console.log("done-lighttoo");
+
+	 			});
 	 	}
 
-		});
+	
     
 
   </script>
