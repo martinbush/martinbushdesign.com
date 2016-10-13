@@ -22,7 +22,7 @@
 
 	var compassdir;
 	var roundcompassdir;
-	console.log(8);
+	console.log(9);
 
 	var lightness
 	var roundlightness
@@ -63,7 +63,7 @@
 
 	function handleOrientation(event) {
 
-		$("#color-me").on("vmousedown",function(){
+		if ($("#color-me").on("vmousedown",function(){
 
 			var lightness
 			var roundlightness
@@ -77,7 +77,8 @@
 	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+'%)');
 	 		console.log("done-lighttoo");
 
-		});
+		})
+			);
 	}
 
 	
