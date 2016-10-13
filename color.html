@@ -53,25 +53,20 @@
 	      roundcompassdir = Math.round(compassdir);
 
 	      if (fingerdown === 0) {
-
-	      $('#color-me').css('background-color','hsl('+roundcompassdir+',100%,50%)');
-	      
-	      console.log("done");
-
+		      $('#color-me').css('background-color','hsl('+roundcompassdir+',100%,50%)');
 		  }
 
-	   
+  	      if (fingerdown === 1) {
+		      $('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+'%)');
+		  }
 
 		    if ($("#color-me").on("vmousedown",function(){
 
 		    	fingerdown = 1
 
 				console.log("tap11");
-				console.log(roundlightness);
 
 		 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+'%)');
-
-
 		 		console.log("done-lighttoo");
 
 			})
