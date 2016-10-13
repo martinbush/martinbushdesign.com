@@ -61,10 +61,9 @@
 		
 
 
-			function handleOrientation(event) {
+	function handleOrientation(event) {
 
-			$("#color-me").on("vmousedown",function(){
-
+		$("#color-me").on("vmousedown",function(){
 
 			var lightness
 			var roundlightness
@@ -75,11 +74,11 @@
 			console.log("tap9");
 			console.log(roundlightness);
 
-	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
+	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+'%)');
 	 		console.log("done-lighttoo");
 
-	 			});
-	 	}
+		});
+	}
 
 	
     
