@@ -39,11 +39,22 @@
 			var roundlightness
 
 			lightness = event.beta;
-			roundlightness = Math.round(lightness);
+			roundlightness = Math.round(lightness);	   
 
-			
+		    if ($("#color-me").on("vmousedown",function(){
 
-	    if(event.webkitCompassHeading) {
+				console.log("tap11");
+				console.log(roundlightness);
+
+		 		$('#color-me').css('background-color','hsl('+roundcompassdir+',50%,70%)');
+
+
+		 		console.log("done-lighttoo");
+
+			})
+				);
+
+			 else if(event.webkitCompassHeading) {
 
 	      // Apple works only with this, alpha doesn't work
 	      compassdir = event.webkitCompassHeading;  
@@ -53,23 +64,10 @@
 	      // $('#color-me').css('background-color','hsl('+roundcompassdir+',100%,50%)');
 	      
 	      console.log("done");
+	  }
 
-	    }
 
 	    else compassdir = event.alpha; 
-
-	    if ($("#color-me").on("vmousedown",function(){
-
-			console.log("tap11");
-			console.log(roundlightness);
-
-	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',50%,70%)');
-
-
-	 		console.log("done-lighttoo");
-
-		})
-			);
 	}
 		
 
