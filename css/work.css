@@ -367,6 +367,8 @@ a {
   user-select: none; 
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  max-height: 100%;
+  overflow:hidden;
 
 
 }
