@@ -8,8 +8,8 @@
 <link rel="stylesheet" type="text/css" href="css/work.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-<!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
- -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 
 </head>
 <body style="overflow:hidden;height:100%;">
@@ -32,6 +32,8 @@
 
 	document.addEventListener("touchstart", function(){}, true);
     window.addEventListener('deviceorientation',  handleOrientation, true);
+
+    $.mobile.loading().hide();
 
 	function handleOrientation(event) {
   // Listen for the deviceorientation event and handle the raw data
