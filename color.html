@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/work.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 
 </head>
@@ -50,13 +51,13 @@
 	      console.log("done");
 
 
-		$("#color-me").on("taphold",function(){
+		// $("#color-me").on("vmousedown",function(){
 
-			console.log("tap");
+		// 	console.log("tap");
 
-	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
+	 // 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
 
-		});
+		// });
 
 		
 
@@ -65,7 +66,13 @@
 
 	    else compassdir = event.alpha; 
 	}
+		$("#color-me").on("vmousedown",function(){
 
+			console.log("tap");
+
+	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+roundlightness+')');
+
+		});
     
 
   </script>
