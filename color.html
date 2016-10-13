@@ -21,7 +21,7 @@
 
 	var compassdir;
 	var roundcompassdir;
-	console.log(6);
+	console.log(7);
 
     window.addEventListener('deviceorientation',  handleOrientation, true);
 
@@ -30,6 +30,9 @@
 
 	    var compassdir;
 	    var roundcompassdir;
+	    var lightness;
+
+	    lightness = event.beta;
 
 	    if(event.webkitCompassHeading) {
 
@@ -44,6 +47,14 @@
 	      
 	      console.log("done");
 
+
+		$("#color-me").on("taphold",function(){
+
+	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+lightness+')');
+
+		});
+
+		console.log(lightness);
 
 	    }
 
