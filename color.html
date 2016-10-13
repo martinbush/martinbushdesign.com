@@ -33,15 +33,17 @@
 	    var lightness;
 
 	    lightness = event.beta;
+		roundlightness = Math.round(lightness);
+		console.log(roundlightness);
 
 	    if(event.webkitCompassHeading) {
 
 	      // Apple works only with this, alpha doesn't work
 	      compassdir = event.webkitCompassHeading;  
 
-	      console.log(compassdir);
+	      // console.log(compassdir);
 	      roundcompassdir = Math.round(compassdir);
-	      console.log(roundcompassdir);
+	      // console.log(roundcompassdir);
 
 	      $('#color-me').css('background-color','hsl('+roundcompassdir+',100%,50%)');
 	      
@@ -50,11 +52,14 @@
 
 		$("#color-me").on("taphold",function(){
 
+			console.log("tap");
+
 	 		$('#color-me').css('background-color','hsl('+roundcompassdir+',100%,'+lightness+')');
 
 		});
 
-		console.log(lightness);
+		
+
 
 	    }
 
