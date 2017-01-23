@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
+<link rel="stylesheet" type="text/css" href="css/notebook.css">
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+
+
+
+</head>
+<body>
+
+<div class="color-background-blue cursor">
+	<div class="about-container cursor">
+		<h1>Diary</h1>
+		<textarea class="text-area" placeholder="What's on your mind?"></textarea>
+
+		<div class="button-row-left">
+			<div class="button save" href="">SAVE</div>
+			<div class="button clear" href="">CLEAR</div>
+		</div>
+
+		<div class="button-row-right">
+			<div id="download" class="button download" href="">DOWNLOAD</div>
+			<div class="button send" href="">SEND</div>
+			<div class="button email-self">EMAIL ME</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+
+
+<script>
+
+$( document ).ready(function() {
+	if (localStorage.getItem("entry") != null) {
+		console.log(localStorage.getItem("entry"));
+	 $('.text-area').val(localStorage.getItem("entry"));
+	}
+})
+
+function saveTextAsFile() {
+  var textToWrite = $('.text-area').val();
+  console.log($('.text-area').val());
+  var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
+  var fileNameToSaveAs = "textarea.txt";
+
+  var downloadLink = document.createElement("a");
+  downloadLink.download = fileNameToSaveAs;
+  downloadLink.innerHTML = "Download File";
+  if (window.webkitURL != null) {
+    // Chrome allows the link to be clicked without actually adding it to the DOM.
+    downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+  } else {
+    // Firefox requires the link to be added to the DOM before it can be clicked.
+    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+  }
+
+  downloadLink.click();
+}
+
+var button = document.getElementById('download');
+button.addEventListener('click', saveTextAsFile);
+
+function destroyClickedElement(event) {
+  // remove the link from the DOM
+  document.body.removeChild(event.target);
+}
+
+
+// Check browser support for Local Storage
+if (typeof(Storage) !== "undefined") {
+
+    // Store
+    $('.save').click(function() {
+	    var fulltext = $('.text-area').val();
+	    localStorage.setItem("entry", fulltext);
+	    console.log(fulltext);
+		console.log($('.text-area').val());
+    })
+
+    // Retrieve
+    $('.get').click(function() {
+	   $('.text-area').val(localStorage.getItem("entry"));
+	})
+
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+
+$('.email-self').click(function() {
+	var body = $('.text-area').val();
+	var date = Date();
+	console.log(body);
+    window.location.href = 'mailto:mabush3@gmail.com?subject=Entry ' + date + '&body=' +body;
+})
+
+$('.send').click(function() {
+	var body = $('.text-area').val();
+	var date = Date();
+	console.log(body);
+    window.location.href = 'mailto:?subject=&body=' +body;
+})
+
+
+</script>
+
+</html>
