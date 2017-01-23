@@ -30,6 +30,7 @@
 			<div class="button email-self">EMAIL ME</div>
 		</div>
 	</div>
+	<div id="saved" class="saved"> SAVED </div>
 	</div>
 
 </body>
@@ -84,6 +85,11 @@ if (typeof(Storage) !== "undefined") {
     $('.save').click(function() {
 	    var fulltext = $('.text-area').val();
 	    localStorage.setItem("entry", fulltext);
+	    $(function () {
+		  $('.saved').fadeIn(function () {
+		    $(this).delay(800).fadeOut();
+		  });
+		});
 	    console.log(fulltext);
 		console.log($('.text-area').val());
     })
@@ -113,6 +119,7 @@ $('.send').click(function() {
 })
 
 $('.clear').click(function() {
+	confirm("Are you sure you want to clear your entry?");
 	localStorage.clear();
 	$('.text-area').val('');
 	document.getElementsByClassName("text-area").placeholder = "What's on your mind?";

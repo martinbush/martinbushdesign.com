@@ -45,9 +45,9 @@ h2 {
 }
 .text-area {
     max-width: 100%;
-    height: calc(100% - 70px);
+    height: 670px;
     display: block;
-    padding: 20px 20px 220px 20px;
+    padding: 20px 20px 20px 20px;
     border: none;
     -webkit-appearance: none;
     margin: 0 auto;
@@ -128,6 +128,23 @@ textarea:focus {
 	background-color: #b9b9b9;
 	color: #ffffff;
     border: solid 1px #b9b9b9;
+}
+
+.saved {
+	font-size: 100px;
+	font-weight: bold;
+	background-color: rgba(27, 255, 121, .8);
+	color: #ffffff;
+	line-height: 800px;
+	opacity: 1;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	display: none;
+	text-align: center;
+	width: 100%;
+	height: 100%
 }
 
 @media only screen and (max-width: 767px) { 
