@@ -109,6 +109,8 @@ textarea:focus {
 	display: inline;
 	padding-left: 20px;
     padding-right: 20px;
+    padding-top:4px; 
+    padding-bottom:4px;
     line-height: 25px;
     font-size: 16px;
     color: #b9b9b9;
@@ -117,8 +119,43 @@ textarea:focus {
 	margin-left: 6px;
 	cursor: pointer;
 }
+
+.clear {
+	border: none;
+}
+
+.save {
+	background-color: #b9b9b9;
+	color: #ffffff;
+    border: solid 1px #b9b9b9;
+}
+
 @media only screen and (max-width: 767px) { 
 
+	.button-row-right {
+		margin: 0 auto;
+		display: block;
+		float: initial;
+		bottom: 20px;
+		right: initial;
+	}
+
+	.no-mobile {
+		display: none;
+	}
+
+	.button-row-left{
+		margin: 0 auto;
+		display: block;
+		float: initial;
+		bottom: 60px;
+		left: initial;
+		right: initial;
+	}
+	.text-area {
+		padding: 0;
+
+	}
 
 	.about-container {
 		position: relative;
@@ -126,7 +163,7 @@ textarea:focus {
 		max-width:1030px;
 		margin: 0 auto;
 		display:block;
-		padding-top: 80px;
+		padding-top: 40px;
 		padding-bottom: 100px;
 	}
 
