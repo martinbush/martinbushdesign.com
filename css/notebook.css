@@ -171,6 +171,7 @@ textarea:focus {
 	}
 	.text-area {
 		padding: 0;
+		height: 500px;
 
 	}
 
