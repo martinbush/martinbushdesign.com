@@ -20,13 +20,13 @@
 		<textarea class="text-area" placeholder="What's on your mind?"></textarea>
 
 		<div class="button-row-left">
-			<div class="button save" href="">SAVE</div>
-			<div class="button clear" href="">CLEAR</div>
+			<div class="button save">SAVE</div>
+			<div class="button clear">CLEAR</div>
 		</div>
 
 		<div class="button-row-right">
-			<div id="download" class="button download" href="">DOWNLOAD</div>
-			<div class="button send" href="">SEND</div>
+			<div id="download" class="button download">DOWNLOAD</div>
+			<div class="button send">SEND</div>
 			<div class="button email-self">EMAIL ME</div>
 		</div>
 	</div>
@@ -102,7 +102,7 @@ $('.email-self').click(function() {
 	var body = $('.text-area').val();
 	var date = Date();
 	console.log(body);
-    window.location.href = 'mailto:mabush3@gmail.com?subject=Entry ' + date + '&body=' +body;
+    window.location.href = 'mailto:mabush3@gmail.com?subject=[ENTRY] ' + date + '&body=' +body;
 })
 
 $('.send').click(function() {
@@ -112,6 +112,11 @@ $('.send').click(function() {
     window.location.href = 'mailto:?subject=&body=' +body;
 })
 
+$('.clear').click(function() {
+	localStorage.clear();
+	$('.text-area').val('');
+	document.getElementsByClassName("text-area").placeholder = "What's on your mind?";
+})
 
 </script>
 
