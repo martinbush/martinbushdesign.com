@@ -521,13 +521,29 @@ Colors Step - style
   max-width: 750px;
   margin: 0 auto;
 }
+
+.cd-product-previews-ink > li img {
+  display: block;
+  width: 50%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 1024px) {
   .cd-product-previews {
     margin: 0 0 2em;
   }
+  .cd-product-previews-ink {
+    margin: 0 0 2em;
+  }
 }
+
+
 @media only screen and (min-width: 1480px) and (min-height: 850px) {
   .cd-product-previews {
+    margin-bottom: 4em;
+  }
+  .cd-product-previews-ink {
     margin-bottom: 4em;
   }
 }

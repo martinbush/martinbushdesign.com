@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
 				
 				self.summary.find('.summary-color').find('.color-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
 				self.summary.find('.product-preview').attr('src', imageSelected);
-			} else if( $(this).data('selection') == 'accessories' ) {
+			} else if( $(this).data('selection') == 'inks' ) {
 				var selectedOptions = $(this).find('.js-option.selected'),
 					optionsContent = '';
 
