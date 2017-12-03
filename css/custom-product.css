@@ -521,6 +521,27 @@ Colors Step - style
   max-width: 750px;
   margin: 0 auto;
 }
+.cd-product-previews-ink {
+  position: relative;
+  margin: 4.5em 0;
+}
+.cd-product-previews-ink > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.cd-product-previews-ink > li.selected {
+  position: relative;
+  opacity: 1;
+}
+.cd-product-previews-ink > li img {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
 
 .cd-product-previews-ink > li img {
   display: block;
