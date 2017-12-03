@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
+<link rel="stylesheet" type="text/css" href="css/meat.css">
+<link rel="stylesheet" type="text/css" href="css/NE.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+</head>
+<div class="header">
+	<div class="title"> 
+		<a href="index.html">
+		<h1>Martin Bush</h1>
+		</a>
+<!-- 		<h2>UI/UX and Animation</h2> -->
+
+	</div>
+	<ul class="nav">
+		<li class="nav-item">
+			<a href="work.html">Work</a></li>
+		<li class="nav-item">
+			<a href="play.html">Play</a></li>
+		<li class="nav-item">
+			<a href="about.html">About</a></li>
+	</ul>
+</div>
+
+<body>
+
+	<div class="new-arrival">
+		<a class="NA-cell" href="#">
+		<div class="NA-img" style="background-image: url(images/NE/NE-1035.jpg); background-size: cover; background-repeat: no-repeat; background-position:center center;">
+			<div class="NA-cta">
+			</div>
+		</div>
+			<div class="NA-cell-title">
+				Best Sellers
+			</div>
+		</a>
+
+		<a class="NA-cell" href="#">
+		<div class="NA-img" style="background-image: url(images/NE/NE-1052.jpg); background-size: cover; background-repeat: no-repeat; background-position:center center;">
+			<div class="NA-cta">
+			</div>
+</div>
+			<div class="NA-cell-title">
+				NEW ARRIVALS
+			</div>
+		</a>
+	
+
+		<a class="NA-cell" href="#"> 
+		<div class="NA-img" style="background-image: url(images/NE/NE-1008.jpg); background-size: cover; background-repeat: no-repeat; background-position:center center;">
+			<div class="NA-cta">
+			</div>
+</div>
+			<div class="NA-cell-title">
+				ACCESSORIES
+			</div>
+		
+		</a>
+	</div>
+
+</body>
+
+
+<div class="footer-wrapper" >
+		<ul class="footer">
+			<li class="footer-links">
+				<a href="http://www.linkedin.com/in/martincbush" target="_blank">
+					<img src="images/footer/linkedin_icon.png">LinkedIn</a></li>
+			<li class="footer-links">
+				<a href="https://www.behance.net/martinbushdesign" target="_blank">
+					<img src="images/footer/behance_icon.png">Behance</a></li>
+			<li class="footer-links">
+				<a href="http://www.martinbushdesign.tumblr.com" target="_blank">
+					<img src="images/footer/tumblr_icon.png">Tumblr</a></li>
+			<li class="footer-links">
+				<a href="http://instagram.com/martybush" target="_blank">
+					<img src="images/footer/instagram_icon.png">Instagram</a></li>
+			<!-- <li class="footer-links">
+				<a href="##">Resume</a></li> -->
+		</ul>
+	</div>
+<script>
+
+	$(".hidden").hide();
+
+	$('#show1.showmore').click(function(event) {
+		event.preventDefault();
+		$("#1.hidden").toggle();
+	});
+
+	
+
+	$("#show2.showmore").click(function(event) {
+		event.preventDefault();
+		$("#2.hidden").toggle();
+	});
+
+// function init() {
+//     window.addEventListener('scroll', function(e){
+//         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+//             shrinkOn = 70,
+//             header = document.querySelector(".header");
+//         if (distanceY > shrinkOn) {
+//             $(".header").addClass("small");
+//         } else 
+//                  $(".header").removeClass("small");
+//         })
+//     };
+// window.onload = init();
+
+</script>
+</body>
+</html>
