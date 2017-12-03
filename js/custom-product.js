@@ -110,10 +110,20 @@ jQuery(document).ready(function($){
 				self.summary.find('.summary-color').find('.color-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
 				self.summary.find('.product-preview').attr('src', imageSelected);
 			} else if( $(this).data('selection') == 'inks' ) {
-				var colorSelected = $(this).find('.cd-product-customizer').find('.selected'),
-					color = colorSelected.children('a').data('color'),
-					colorName = colorSelected.data('content'),
-		};
+				var selectedOptions = $(this).find('.js-option.selected'),
+					optionsContent = '';
+
+				if( selectedOptions.length == 0 ) {
+					optionsContent = '<li><p>No Accessories selected;</p></li>';
+				} else {
+					selectedOptions.each(function(){
+						optionsContent +='<li><p>'+$(this).find('p').text()+'</p></li>';
+					});
+				}
+
+				self.summary.find('.summary-accessories').children('li').remove().end().append($(optionsContent));
+			}
+		});
 	}
 
 	ProductBuilder.prototype.updateListOptions = function(listItem) {
