@@ -109,13 +109,11 @@ jQuery(document).ready(function($){
 				
 				self.summary.find('.summary-color').find('.color-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
 				self.summary.find('.product-preview').attr('src', imageSelected);
-
 			} else if( $(this).data('selection') == 'inks' ) {
-				var inkSelected = $(this).find('.cd-product-customizer-ink').find('.selected'),
-					ink = inkSelected.children('a').data('color'),
-					inkName = inkSelected.data('content'),
-			}
-		});
+				var colorSelected = $(this).find('.cd-product-customizer').find('.selected'),
+					color = colorSelected.children('a').data('color'),
+					colorName = colorSelected.data('content'),
+		};
 	}
 
 	ProductBuilder.prototype.updateListOptions = function(listItem) {
