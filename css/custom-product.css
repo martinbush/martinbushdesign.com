@@ -572,12 +572,12 @@ Colors Step - style
 .cd-product-customizer, .cd-product-customizer-ink {
   text-align: center;
 }
-.cd-product-customizer li, , .cd-product-customizer-ink li {
+.cd-product-customizer li, .cd-product-customizer-ink li {
   position: relative;
   display: inline-block;
   margin-right: .5em;
 }
-.cd-product-customizer li:last-of-type, , .cd-product-customizer-ink li:last-of-type {
+.cd-product-customizer li:last-of-type, .cd-product-customizer-ink li:last-of-type {
   margin-right: 0;
 }
 .cd-product-customizer li::before, .cd-product-customizer li::after, .cd-product-customizer-ink li::before, .cd-product-customizer-ink li::after {
@@ -604,7 +604,7 @@ Colors Step - style
   border-top-width: 10px;
   border-top-width: 10px;
 }
-.cd-product-customizer li::after, , .cd-product-customizer-ink  li::after{
+.cd-product-customizer li::after, .cd-product-customizer-ink  li::after{
   /* this is the tooltip content */
   content: attr(data-content);
   background-color: rgba(237, 237, 237, 0.8);

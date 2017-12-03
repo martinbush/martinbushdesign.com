@@ -45,6 +45,11 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 			self.customizeModel($(this));
 		});
+
+		this.stepsWrapper.on('click', '.cd-product-customizer-ink a', function(event){
+			event.preventDefault();
+			self.customizeModel($(this));
+		});
 	};
 
 	ProductBuilder.prototype.newContentSelected = function(nextStep) {
