@@ -624,6 +624,12 @@ Colors Step - style
 [data-color="perl"] {
   background-color: #d1d1d1;
 }
+[data-color="black"] {
+  background-color: #000000;
+}
+[data-color="coral"] {
+  background-color: #f88379;
+}
 
 /* -------------------------------- 
 
