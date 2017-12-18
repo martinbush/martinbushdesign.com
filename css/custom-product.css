@@ -271,9 +271,7 @@ Step content - basic style
   }
 
   .size-label {
-    top: 9px;
-    right: 11px;
-    position: absolute;
+
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -583,11 +581,9 @@ Colors Step - style
 }
 
 .size-label {
-    top: 18px;
-    width: 33%;
-    right: 21px;
     text-align: center;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
 }
 
 .product-preview-wrapper {
