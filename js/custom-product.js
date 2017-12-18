@@ -112,7 +112,7 @@ jQuery(document).ready(function($){
 				var sizeSelected = $(this).find('.cd-product-customizer').find('.selected'),
 					size = sizeSelected.children('a').data('size'),
 					sizeName = sizeSelected.data('content');
-					console.log(sizeSelected)
+					console.log(sizeSelected);
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				
 								// self.summary.find('.product-preview').attr('src', imageSelected);
@@ -135,6 +135,7 @@ jQuery(document).ready(function($){
 					ink = inkSelected.children('a').data('inkcolor'),
 					inkName = inkSelected.data('content');
 					inkImageSelected = $(this).find('.ink-image').find('.selected img').attr('src');
+					console.log(inkSelected);
 
 					self.summary.find('.summary-ink').find('.ink-label').text(colorName).siblings('.ink-swatch').attr('data-inkcolor', ink);
 					self.summary.find('.ink-color-summary-preview').attr('src', inkImageSelected);
