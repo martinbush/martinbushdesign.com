@@ -130,9 +130,10 @@ jQuery(document).ready(function($){
 					var inkSelected = $(this).find('.ink-color').find('.selected'),
 					ink = inkSelected.children('a').data('inkcolor'),
 					inkName = inkSelected.data('content');
+					inkImageSelected = $(this).find('.ink-image').find('.selected img').attr('src');
 
 					self.summary.find('.summary-ink').find('.ink-label').text(colorName).siblings('.color-swatch').attr('data-inkcolor', ink);
-					self.summary.find('.product-preview').attr('src', imageSelected);
+					self.summary.find('.ink-color-summary-preview').attr('src', inkImageSelected);
 			}
 		});
 	}
