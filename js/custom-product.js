@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
 		//bottom summary 
 		this.fixedSummary = this.element.find('.cd-builder-footer');
 		this.modelPreview = this.element.find('.selected-product').find('img');
+		this.footerSizeWrapper = this.element.find('.footer-size').find('b');
 		this.totPriceWrapper = this.element.find('.tot-price').find('b');
 		//builder navigations
 		this.mainNavigation = this.element.find('.cd-builder-main-nav');
@@ -105,7 +106,17 @@ jQuery(document).ready(function($){
 		this.steps.each(function(){
 			//this function may need to be updated according to your builder steps and summary
 			var step = $(this);
-			if( $(this).data('selection') == 'colors' ) {
+			if( $(this).data('selection') == 'sizes' ) {
+				//create the Color summary
+				var sizeSelected = $(this).find('.cd-product-customizer').find('.selected'),
+					size = colorSelected.children('a').data('size'),
+					sizeName = colorSelected.data('content'),
+					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
+				
+				self.summary.find('.summary-color').find('.color-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
+				self.summary.find('.product-preview').attr('src', imageSelected);
+			}
+			elsif( $(this).data('selection') == 'colors' ) {
 				//create the Color summary
 				var colorSelected = $(this).find('.cd-product-customizer').find('.selected'),
 					color = colorSelected.children('a').data('color'),
