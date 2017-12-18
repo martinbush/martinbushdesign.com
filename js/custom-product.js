@@ -113,7 +113,7 @@ jQuery(document).ready(function($){
 					sizeName = sizeSelected.data('content');
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				
-				self.summary.find('.summary-size').find('.size-label').text(sizeName).siblings('.color-swatch').attr('data-color', color);
+				self.summary.find('.summary-size').find('.size-label').text(sizeName).siblings('.color-swatch').attr('data-size', size);
 				// self.summary.find('.product-preview').attr('src', imageSelected);
 			}
 			else if( $(this).data('selection') == 'colors' ) {
@@ -125,12 +125,13 @@ jQuery(document).ready(function($){
 				
 				self.summary.find('.summary-color').find('.color-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
 				self.summary.find('.product-preview').attr('src', imageSelected);
+
 			} else if( $(this).data('selection') == 'inks' ) {
 					var inkSelected = $(this).find('.ink-color').find('.selected'),
 					ink = inkSelected.children('a').data('inkcolor'),
 					inkName = inkSelected.data('content');
 
-					self.summary.find('.summary-ink').find('.ink-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
+					self.summary.find('.summary-ink').find('.ink-label').text(colorName).siblings('.color-swatch').attr('data-inkcolor', ink);
 					self.summary.find('.product-preview').attr('src', imageSelected);
 			}
 		});
