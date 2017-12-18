@@ -705,6 +705,27 @@ Colors Step - style
   background-color: #f88379;
 }
 
+[data-inkcolor="white"] {
+  /* used to give background color to Color options */
+  background-color: #FFFFFF;
+}
+[data-inkcolor="mint"] {
+  background-color: #a1dbd3;
+}
+[data-inkcolor="lemon"] {
+  background-color: #eddd9f;
+}
+[data-inkcolor="perl"] {
+  background-color: #d1d1d1;
+}
+[data-inkcolor="black"] {
+  background-color: #000000;
+}
+[data-inkcolor="coral"] {
+  background-color: #f88379;
+}
+
+
 /* -------------------------------- 
 
 Accessories Step - style

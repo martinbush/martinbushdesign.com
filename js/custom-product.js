@@ -112,7 +112,7 @@ jQuery(document).ready(function($){
 				var sizeSelected = $(this).find('.cd-product-customizer').find('.selected'),
 					size = sizeSelected.children('a').data('size'),
 					sizeName = sizeSelected.data('content');
-					console.log(sizeSelected);
+					
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				
 								// self.summary.find('.product-preview').attr('src', imageSelected);
