@@ -518,7 +518,7 @@ Colors Step - style
 .cd-product-previews > li img {
   display: block;
   width: 100%;
-  max-width: 750px;
+  max-width: 620px;
   margin: 0 auto;
 }
 .cd-product-previews-ink {
@@ -975,7 +975,7 @@ Builder fixed bottom summary
     float: left;
   }
   .cd-builder-footer img {
-    width: 197px;
+    width: 147px;
     padding-right: 27px;
     margin-right: 27px;
     border-right: 1px solid #e1e1e1;
