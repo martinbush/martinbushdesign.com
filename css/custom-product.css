@@ -269,6 +269,12 @@ Step content - basic style
   .cd-step-content .options-list.cd-col-2 > li:nth-of-type(2n) {
     margin-right: 0;
   }
+  
+  .size-label {
+    top: 9px;
+    right: 11px;
+    position: absolute;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .cd-step-content {
@@ -569,6 +575,12 @@ Colors Step - style
     display: block;
     top: 162px;
     left: 247px;
+}
+
+.size-label {
+    top: 18px;
+    right: 21px;
+    position: absolute;
 }
 
 .product-preview-wrapper {
