@@ -564,15 +564,17 @@ Colors Step - style
   margin: 0 auto;
 }
 .ink-color-summary-preview {
-    width: 200px;
+    width: 196px;
     position: absolute;
     display: block;
-    top: 232px;
+    top: 162px;
+    left: 247px;
 }
 
 .product-preview-wrapper {
   position: relative;
   width: 700px;
+  margin: 0 auto;
 
 }
 

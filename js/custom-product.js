@@ -125,6 +125,8 @@ jQuery(document).ready(function($){
 				
 				self.summary.find('.summary-color').find('.color-label').text(colorName).siblings('.color-swatch').attr('data-color', color);
 				self.summary.find('.product-preview').attr('src', imageSelected);
+				document.getElementById("chosen-garment").src = imageSelected;
+
 
 			} else if( $(this).data('selection') == 'inks' ) {
 					var inkSelected = $(this).find('.ink-color').find('.selected'),
