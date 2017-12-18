@@ -269,7 +269,7 @@ Step content - basic style
   .cd-step-content .options-list.cd-col-2 > li:nth-of-type(2n) {
     margin-right: 0;
   }
-  
+
   .size-label {
     top: 9px;
     right: 11px;
@@ -568,6 +568,11 @@ Colors Step - style
 .ink-image {
   width:200px;
   margin: 0 auto;
+  width: 200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 150px;
+  left: 245px;
 }
 .ink-color-summary-preview {
     width: 196px;
