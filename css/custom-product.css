@@ -279,7 +279,7 @@ Step content - basic style
 @media only screen and (min-width: 1024px) {
   .cd-step-content {
     /* this padding takes care of both top and bottom fixed navigations */
-    padding: 220px 0 140px;
+    padding: 170px 0 140px;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -624,8 +624,8 @@ Colors Step - style
   -webkit-transform: translateX(-50%) translateY(-5px);
       -ms-transform: translateX(-50%) translateY(-5px);
           transform: translateX(-50%) translateY(-5px);
-  opacity: 0;
-  visibility: hidden;
+/*  opacity: 0;
+  visibility: hidden;*/
   -webkit-transition: opacity .2s, visibility .2s, -webkit-transform .2s;
   transition: opacity .2s, visibility .2s, -webkit-transform .2s;
   transition: opacity .2s, visibility .2s, transform .2s;
