@@ -65,7 +65,7 @@ jQuery(document).ready(function($){
 				//in this case, color has been changed - update the preview image
 				var imageSelected = this.steps.filter('.active').find('.cd-product-previews').children('.selected').children('img').attr('src');
 				this.modelPreview.attr('src', imageSelected);
-				
+				document.getElementById("chosen-garment").src = imageSelected;
 			}
 			//if Summary is the selected step (new step to be revealed) -> update summary content
 			if( nextStep + 1 >= this.steps.length ) {
@@ -130,7 +130,7 @@ jQuery(document).ready(function($){
 
 			} else if( $(this).data('selection') == 'inks' ) {
 				//create the Ink summary
-					var inkSelected = $(this).find('.ink-color').find('.selected'),
+					var inkSelected = $(this).find('.cd-product-customizer').find('.selected'),
 					ink = inkSelected.children('a').data('inkcolor'),
 					inkName = inkSelected.data('content');
 					inkImageSelected = $(this).find('.ink-image').find('.selected img').attr('src');
