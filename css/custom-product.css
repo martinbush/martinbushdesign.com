@@ -563,7 +563,18 @@ Colors Step - style
   width:200px;
   margin: 0 auto;
 }
+.ink-color-summary-preview {
+    width: 200px;
+    position: absolute;
+    display: block;
+    top: 232px;
+}
 
+.product-preview-wrapper {
+  position: relative;
+  width: 700px;
+
+}
 
 @media only screen and (min-width: 1480px) and (min-height: 850px) {
   .cd-product-previews {
