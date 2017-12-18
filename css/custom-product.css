@@ -579,7 +579,9 @@ Colors Step - style
 
 .size-label {
     top: 18px;
+    width: 33%;
     right: 21px;
+    text-align: center;
     position: absolute;
 }
 
