@@ -110,7 +110,7 @@ jQuery(document).ready(function($){
 				//create the Color summary
 				var sizeSelected = $(this).find('.cd-product-customizer').find('.selected'),
 					size = sizeSelected.children('a').data('size'),
-					sizeName = sizeSelected.data('content'),
+					sizeName = sizeSelected.data('content');
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				
 				self.summary.find('.summary-size').find('.size-label').text(sizeName).siblings('.color-swatch').attr('data-color', color);
