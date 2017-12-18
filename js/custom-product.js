@@ -65,6 +65,7 @@ jQuery(document).ready(function($){
 				//in this case, color has been changed - update the preview image
 				var imageSelected = this.steps.filter('.active').find('.cd-product-previews').children('.selected').children('img').attr('src');
 				this.modelPreview.attr('src', imageSelected);
+				
 			}
 			//if Summary is the selected step (new step to be revealed) -> update summary content
 			if( nextStep + 1 >= this.steps.length ) {
@@ -107,14 +108,13 @@ jQuery(document).ready(function($){
 			//this function may need to be updated according to your builder steps and summary
 			var step = $(this);
 			if( $(this).data('selection') == 'sizes' ) {
-				//create the Color summary
+				//create the Size summary
 				var sizeSelected = $(this).find('.cd-product-customizer').find('.selected'),
 					size = sizeSelected.children('a').data('size'),
 					sizeName = sizeSelected.data('content');
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				
-				self.summary.find('.summary-size').find('.size-label').text(sizeName).siblings('.color-swatch').attr('data-size', size);
-				// self.summary.find('.product-preview').attr('src', imageSelected);
+								// self.summary.find('.product-preview').attr('src', imageSelected);
 			}
 			else if( $(this).data('selection') == 'colors' ) {
 				//create the Color summary
@@ -129,12 +129,13 @@ jQuery(document).ready(function($){
 
 
 			} else if( $(this).data('selection') == 'inks' ) {
+				//create the Ink summary
 					var inkSelected = $(this).find('.ink-color').find('.selected'),
 					ink = inkSelected.children('a').data('inkcolor'),
 					inkName = inkSelected.data('content');
 					inkImageSelected = $(this).find('.ink-image').find('.selected img').attr('src');
 
-					self.summary.find('.summary-ink').find('.ink-label').text(colorName).siblings('.color-swatch').attr('data-inkcolor', ink);
+					self.summary.find('.summary-ink').find('.ink-label').text(colorName).siblings('.ink-swatch').attr('data-inkcolor', ink);
 					self.summary.find('.ink-color-summary-preview').attr('src', inkImageSelected);
 			}
 		});
