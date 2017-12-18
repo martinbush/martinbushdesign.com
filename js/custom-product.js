@@ -143,39 +143,39 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	ProductBuilder.prototype.updateListOptions = function(listItem) {
-		var self = this;
+	// ProductBuilder.prototype.updateListOptions = function(listItem) {
+	// 	var self = this;
 		
-		if( listItem.hasClass('js-radio') ) {
-			//this means only one option can be selected (e.g., models) - so check if there's another option selected and deselect it
-			var alreadySelectedOption = listItem.siblings('.selected'),
-				price = (alreadySelectedOption.length > 0 ) ? -Number(alreadySelectedOption.data('price')) : 0;
+	// 	if( listItem.hasClass('js-radio') ) {
+	// 		//this means only one option can be selected (e.g., models) - so check if there's another option selected and deselect it
+	// 		var alreadySelectedOption = listItem.siblings('.selected'),
+	// 			price = (alreadySelectedOption.length > 0 ) ? -Number(alreadySelectedOption.data('price')) : 0;
 
-			//if the option was already selected and you are deselecting it - price is the price of the option just clicked
-			( listItem.hasClass('selected') ) 
-				? price = -Number(listItem.data('price'))
-				: price = Number(listItem.data('price')) + price;
+	// 		//if the option was already selected and you are deselecting it - price is the price of the option just clicked
+	// 		( listItem.hasClass('selected') ) 
+	// 			? price = -Number(listItem.data('price'))
+	// 			: price = Number(listItem.data('price')) + price;
 
-			//now deselect all the other options
-			alreadySelectedOption.removeClass('selected');
-			//toggle the option just selected
-			listItem.toggleClass('selected');
-			//update totalPrice - only if the step is not the Models step
-			(listItem.parents('[data-selection="models"]').length == 0) && self.updatePrice(price);
-		} else {
-			//more than one options can be selected - just need to add/remove the one just clicked
-			var price = ( listItem.hasClass('selected') ) ? -Number(listItem.data('price')) : Number(listItem.data('price'));
-			//toggle the option just selected
-			listItem.toggleClass('selected');
-			//update totalPrice
-			self.updatePrice(price);
-		}
+	// 		//now deselect all the other options
+	// 		alreadySelectedOption.removeClass('selected');
+	// 		//toggle the option just selected
+	// 		listItem.toggleClass('selected');
+	// 		//update totalPrice - only if the step is not the Models step
+	// 		(listItem.parents('[data-selection="models"]').length == 0) && self.updatePrice(price);
+	// 	} else {
+	// 		//more than one options can be selected - just need to add/remove the one just clicked
+	// 		var price = ( listItem.hasClass('selected') ) ? -Number(listItem.data('price')) : Number(listItem.data('price'));
+	// 		//toggle the option just selected
+	// 		listItem.toggleClass('selected');
+	// 		//update totalPrice
+	// 		self.updatePrice(price);
+	// 	}
 		
-		if( listItem.parents('[data-selection="models"]').length > 0 ) {
-			//since a model has been selected/deselected, you need to update the builder content
-			self.updateModelContent(listItem);
-		}
-	};
+	// 	if( listItem.parents('[data-selection="models"]').length > 0 ) {
+	// 		//since a model has been selected/deselected, you need to update the builder content
+	// 		self.updateModelContent(listItem);
+	// 	}
+	// };
 
 	ProductBuilder.prototype.updateModelContent = function(model) {
 		var self = this;
