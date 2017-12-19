@@ -840,6 +840,12 @@ Summary Step - style
   margin-top: 11px;
   margin-left: .5em;
 }
+.cd-builder-steps .summary-list .ink-label {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-top: 11px;
+  margin-left: .5em;
+}
 .cd-builder-steps .summary-list .summary-accessories {
   color: #5D7C89;
   list-style: disc;
