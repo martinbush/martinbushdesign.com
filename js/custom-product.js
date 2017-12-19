@@ -116,6 +116,7 @@ jQuery(document).ready(function($){
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				self.summary.find('.summary-size').find('.size-label').text(sizeName);
 				$('.footer-size-display').text(sizeName);
+				console.log('4');
 								// self.summary.find('.product-preview').attr('src', imageSelected);
 			}
 			else if( $(this).data('selection') == 'colors' ) {
