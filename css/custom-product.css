@@ -640,6 +640,7 @@ Colors Step - style
 .cd-product-customizer li::after, .cd-product-customizer-ink  li::after{
   /* this is the tooltip content */
   content: attr(data-content);
+  top: -25px;
  /* background-color: rgba(237, 237, 237, 0.8);
   white-space: nowrap;*/
  /* padding: .7em 1.1em;*/

@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 		//bottom summary 
 		this.fixedSummary = this.element.find('.cd-builder-footer');
 		this.modelPreview = this.element.find('.selected-product').find('img');
-		this.footerSizeWrapper = this.element.find('.footer-size').find('b');
+		// this.footerSizeWrapper = this.element.find('.footer-size').find('b');
 		this.totPriceWrapper = this.element.find('.tot-price').find('b');
 		//builder navigations
 		this.mainNavigation = this.element.find('.cd-builder-main-nav');
@@ -115,6 +115,7 @@ jQuery(document).ready(function($){
 					
 					// imageSelected = $(this).find('.cd-product-previews').find('.selected img').attr('src');
 				self.summary.find('.summary-size').find('.size-label').text(sizeName);
+				$('footer-size-display').text(sizeName);
 								// self.summary.find('.product-preview').attr('src', imageSelected);
 			}
 			else if( $(this).data('selection') == 'colors' ) {
@@ -135,7 +136,7 @@ jQuery(document).ready(function($){
 					ink = inkSelected.children('a').data('inkcolor'),
 					inkName = inkSelected.data('content');
 					inkImageSelected = $(this).find('.ink-image').find('.selected img').attr('src');
-					console.log(inkSelected);
+					
 
 					self.summary.find('.summary-ink').find('.ink-label').text(inkName).siblings('.ink-swatch').attr('data-inkcolor', ink);
 					self.summary.find('.ink-color-summary-preview').attr('src', inkImageSelected);
