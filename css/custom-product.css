@@ -1230,6 +1230,7 @@ Builder fixed bottom summary
   }
   .cd-builder-secondary-nav a {
     padding-left: 2.3em;
+    line-height: 4em;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 850px) {
