@@ -139,7 +139,7 @@ jQuery(document).ready(function($){
 					inkImageSelected = $(this).find('.ink-image').find('.selected img').attr('src');
 					
 
-					self.summary.find('.summary-ink').find('.ink-label').text(inkName).siblings('.ink-swatch').attr('data-inkcolor', ink);
+					self.summary.find('.summary-color').find('.ink-label').text(inkName).siblings('.color-swatch').attr('data-inkcolor', ink);
 					self.summary.find('.ink-color-summary-preview').attr('src', inkImageSelected);
 			}
 		});
