@@ -1,0 +1,461 @@
+<style>
+
+.agency-header {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2rem;
+    padding-top: 8rem;
+}
+.agency-page-container {
+	width:100%;
+}
+.agency-body-container {
+	width:100%;
+	max-width: 1280px;
+    padding-top: 0rem;
+    margin: 0 auto;
+    z-index: 4;
+    position: relative;
+}
+.full-cell {
+	display: block;
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+    padding: 32px;
+
+}
+
+.half-cell {
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+	width: 50% !important;
+}
+
+.third-cell {
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+	width: 28.1% !important;
+	display: inline-block;
+	padding: 32px;
+
+}
+
+.full-cell:hover, .half-cell:hover, .third-cell:hover, .pitch-nav-item:hover {
+    -webkit-box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+
+}
+
+.pitch-image {
+	background-color: #afafaf;
+	display: block;
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+	width:100%;
+	margin-bottom: 50px;
+}
+
+.pitch-content {
+	overflow-wrap: break-word;
+	white-space: normal;
+    min-height: 1px;
+    width: 66.665%;
+}
+
+.pitch-big-header {
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    color: #424242;
+    margin-bottom: 23px;
+    letter-spacing: .4px;
+}
+.pitch-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+
+    color: #424242;
+    letter-spacing: .4px;
+}
+
+.pitch-subheader {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #424242;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+
+.pitch-header {
+	    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 96px;
+    line-height: 45px;
+
+}
+
+.pitch-link {
+	font-size: .875rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #5f6368;
+    font-family: Roboto Mono;
+    padding: 24px 0 0;
+    text-transform: capitalize;
+}
+
+.pitch-nav {
+    background: #f4f4f4;
+    margin: 0 auto;
+	width: 860px;
+    padding: 18px;
+    font-size: .8em;
+    font-weight: 600;
+    height: 60px;
+    vertical-align: middle;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+}
+
+.pitch-nav-item {
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+    display: inline-block;
+    float: left;
+    width: 24%;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.pitch-nav-item-link {
+	line-height: 60px;
+    width: 100%;
+    height:100%;
+    margin: 0;
+    display:block;
+
+}
+
+
+.pitch-copy {
+	display: block;
+	position: relative;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+
+.third {
+	width:33%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.twothird {
+	width:66%;
+	display: inline-block;
+	height: 400px;
+}
+
+.twothird > .pitch-image {
+	height: 400px;
+
+}
+
+.third-cell > a >.pitch-content {
+	width: 100%;
+
+}
+
+.third-cell > a >  .image-container > .pitch-image {
+	height:300px;
+	margin-bottom:0px;
+}
+
+</style>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/play.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+	<div class="agency-page-container">
+		<div class="agency-header"> Oaklandish Creative Agency </div>
+
+
+		<ul class="pitch-nav">
+			<li class="pitch-nav-item">
+				<a  href="#screenprinting" class="pitch-nav-item-link">Screen Printing</a></li>
+			<li class="pitch-nav-item" class="pitch-nav-item-link">
+				<a href="#branding" class="pitch-nav-item-link">Branding & Markenting</a></li>
+			<li class="pitch-nav-item" >
+				<a href="#webdev" class="pitch-nav-item-link">Web Development</a></li>
+			<li class="pitch-nav-item" >
+				<a href="#prototyping" class="pitch-nav-item-link">Prototyping & Fabrication</a></li>
+		</ul>
+
+		<div class="agency-body-container">
+			<div class="full-cell">
+				<a href="#">
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+					<div class="pitch-content">
+						<div class="pitch-big-header"> Design by Oaklandish </div>
+						<div class="pitch-subheader"> The true meaning of Town Biz </div>
+						<div class="pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+						<div class="pitch-link"> Past Projects </div>
+					</div>
+				</a>
+			</div>
+
+			<div id="screenprinting" class="full-cell">
+				<a href="#">
+					<div class="pitch-content third">
+						<div class="pitch-header"> Screen Printing </div>
+						<div class="pitch-subheader"> Automated and Hand Printed Garments </div>
+						<div class="pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+						<div class="pitch-link"> See all techniques and effects </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Printing Effects and Techniques </div>
+						<div class="pitch-copy"> Glow in the dark, puff ink, metallic and more! </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Heat Transfers </div>
+						<div class="pitch-copy"> Enables quick printing in unique places. </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Re-labeling </div>
+						<div class="pitch-copy"> Unify your custom products with custome labeling </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div id="webdev" class="full-cell">
+				<a href="#">
+					<div class="pitch-content third">
+						<div class="pitch-header"> Web Development </div>
+						<div class="pitch-subheader"> Automated and Hand Printed Garments </div>
+						<div class="pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+						<div class="pitch-link"> See all techniques and effects </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Shopify and Squarespace Support </div>
+						<div class="pitch-copy"> Is your E-commerce site broken?  </div>
+						<div class="pitch-link"> Drop us a line </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Custom E-commerce Features </div>
+						<div class="pitch-copy"> Want to add video, and other cool stuff to your site? </div>
+						<div class="pitch-link"> We Can Help </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Office Hours </div>
+						<div class="pitch-copy"> Come sit with one of our engineers. </div>
+						<div class="pitch-link"> Let's Build Together </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div id="branding" class="full-cell">
+				<a href="#">
+					<div class="pitch-content third">
+						<div class="pitch-header"> Branding Marketing </div>
+						<div class="pitch-subheader"> Automated and Hand Printed Garments </div>
+						<div class="pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+						<div class="pitch-link"> See all techniques and effects </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Design </div>
+						<div class="pitch-copy"> Logos, Wordmarks, Business Cards, and other business needs.  </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Brand Voice </div>
+						<div class="pitch-copy"> Identity and Brand Feel. </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Merchandising </div>
+						<div class="pitch-copy"> Team T-shirts, and other branded accessories </div>
+						<div class="pitch-link"> Get some swag </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div id="prototyping" class="full-cell">
+				<a href="#">
+					<div class="pitch-content third">
+						<div class="pitch-header"> Prototyping & Fabrication </div>
+						<div class="pitch-subheader"> Automated and Hand Printed Garments </div>
+						<div class="pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+						<div class="pitch-link"> See all techniques and effects </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Cut & Sew  </div>
+						<div class="pitch-copy"> Logos, Wordmarks, Business Cards, and other business needs.  </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Domestic Production </div>
+						<div class="pitch-copy"> Identity and Brand Feel. </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> One of a kind </div>
+						<div class="pitch-copy"> Team T-shirts, and other branded accessories </div>
+						<div class="pitch-link"> Get some swag </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
+
