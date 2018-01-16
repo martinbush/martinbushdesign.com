@@ -22,19 +22,26 @@
 	display: block;
 	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
     padding: 32px;
+    float:left;
+    width: 100%;
+    box-sizing: border-box;
 
 }
 
 .half-cell {
 	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
 	width: 50% !important;
+	float:left;
+	box-sizing: border-box;
 }
 
 .third-cell {
 	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
-	width: 28.1% !important;
-	display: inline-block;
+	width: 33% !important;
+	float:left;
 	padding: 32px;
+	vertical-align: top;
+	box-sizing: border-box;
 
 }
 
@@ -42,6 +49,12 @@
     -webkit-box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
     box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
 
+}
+
+.full-cell:after, .half-cell:after, .full-cell-nh:after, .third-cell:after, .third:after, .secondary-pitch-image:after; .twothird:after{
+  display: table;
+  clear: both;
+  content: '';
 }
 
 .pitch-image {
@@ -57,7 +70,6 @@
 .pitch-content {
 	overflow-wrap: break-word;
 	white-space: normal;
-    min-height: 1px;
     width: 66.665%;
 }
 
@@ -109,12 +121,13 @@
     font-family: Roboto Mono;
     padding: 24px 0 0;
     text-transform: capitalize;
+    margin-bottom: 22px;
 }
 
 .pitch-nav {
     background: #f4f4f4;
     margin: 0 auto;
-	width: 860px;
+	width: 1000px;
     padding: 18px;
     font-size: .8em;
     font-weight: 600;
@@ -131,7 +144,7 @@
 	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
     display: inline-block;
     float: left;
-    width: 24%;
+    width:20%;
     text-align: center;
     vertical-align: middle;
     height: 60px;
@@ -152,19 +165,28 @@
 	position: relative;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
+	min-height:50px;
+	margin-bottom: 22px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #848484;
+    letter-spacing: .03rem;
 }
 
 
 .third {
-	width:33%;
-	display: inline-block;
+	width:33.3%;
+	float:left;
 	vertical-align: top;
+	box-sizing: border-box;
 }
 
 .twothird {
-	width:66%;
-	display: inline-block;
+	width:66.6%;
+	float:left;
 	height: 400px;
+	box-sizing: border-box;
 }
 
 .twothird > .pitch-image {
@@ -210,6 +232,8 @@
 				<a href="#webdev" class="pitch-nav-item-link">Web Development</a></li>
 			<li class="pitch-nav-item" >
 				<a href="#prototyping" class="pitch-nav-item-link">Prototyping & Fabrication</a></li>
+			<li class="pitch-nav-item" >
+				<a href="#fulfillment" class="pitch-nav-item-link">Fulfillment</a></li>
 		</ul>
 
 		<div class="agency-body-container">
@@ -229,7 +253,7 @@
 			</div>
 
 			<div id="screenprinting" class="full-cell">
-				<a href="#">
+				<a href="./screenprinting.html">
 					<div class="pitch-content third">
 						<div class="pitch-header"> Screen Printing </div>
 						<div class="pitch-subheader"> Automated and Hand Printed Garments </div>
@@ -391,6 +415,7 @@
 					</div>
 				</a>
 			</div>
+
 			<div id="prototyping" class="full-cell">
 				<a href="#">
 					<div class="pitch-content third">
@@ -410,8 +435,8 @@
 				<a href="#">
 					<div class="pitch-content">
 						<div class="pitch-header"> Cut & Sew  </div>
-						<div class="pitch-copy"> Logos, Wordmarks, Business Cards, and other business needs.  </div>
-						<div class="pitch-link"> Learn More </div>
+						<div class="pitch-copy"> Designing your own Brand or Clothing Line?  </div>
+						<div class="pitch-link"> We can help </div>
 					</div>
 					<div class="image-container">
 						<div class="pitch-image">
@@ -423,8 +448,8 @@
 				<a href="#">
 					<div class="pitch-content">
 						<div class="pitch-header"> Domestic Production </div>
-						<div class="pitch-copy"> Identity and Brand Feel. </div>
-						<div class="pitch-link"> Learn More </div>
+						<div class="pitch-copy"> AMERICA! </div>
+						<div class="pitch-link"> FUCK YEAH </div>
 					</div>
 					<div class="image-container">
 						<div class="pitch-image">
@@ -436,8 +461,62 @@
 				<a href="#">
 					<div class="pitch-content">
 						<div class="pitch-header"> One of a kind </div>
-						<div class="pitch-copy"> Team T-shirts, and other branded accessories </div>
-						<div class="pitch-link"> Get some swag </div>
+						<div class="pitch-copy"> Designing from the ground up. 100% custom garments. </div>
+						<div class="pitch-link"> Get Some </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div id="fulfillment" class="full-cell">
+				<a href="#">
+					<div class="pitch-content third">
+						<div class="pitch-header"> Fulfillment and Customer Service </div>
+						<div class="pitch-subheader"> We'll ship your orders! </div>
+						<div class="pitch-copy"> And handle all your issues. Just focus on making cool stuff. </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Inventory Managment  </div>
+						<div class="pitch-copy"> We will house all your product in our 10,000 sqft Jack London Warehouse  </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Fulfillment </div>
+						<div class="pitch-copy"> We ship Fedex and USPS Domestically </div>
+						<div class="pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="pitch-header"> Customer Service </div>
+						<div class="pitch-copy"> Returns, Inqueries, and Exchanges </div>
+						<div class="pitch-link"> We're a less dickhead version of you! </div>
 					</div>
 					<div class="image-container">
 						<div class="pitch-image">

@@ -1,0 +1,525 @@
+<style>
+
+.agency-secondary-header {
+	display: block;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 2rem;
+    margin-top: 10px;
+}
+.agency-secondary-page-container {
+	width:100%;
+}
+.agency-secondary-body-container {
+	width:100%;
+	padding-top: 8rem;
+	max-width: 1160px;
+    margin: 0 auto;
+    z-index: 4;
+    position: relative;
+}
+.full-cell {
+	float: left;
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+    padding: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 364px;
+
+}
+
+.full-cell-nh {
+	float: left;
+	width: 100%;
+	padding: 32px;
+    height: 364px;
+    box-sizing: border-box;
+
+}
+
+.half-cell {
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+	width: 50% !important;
+	float:left;
+	padding: 32px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.third-cell {
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+	width: 33.3% !important;
+	float:left;
+	padding: 32px;
+	vertical-align: top;
+	box-sizing: border-box;
+
+}
+
+.full-cell:hover, .half-cell:hover, .third-cell:hover {
+    -webkit-box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+
+}
+
+.full-cell:after, .half-cell:after, .full-cell-nh:after, .third-cell:after, .third:after, .secondary-pitch-image:after; .twothird:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.secondary-pitch-image {
+	background-color: #dadada;
+	float: left;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	width:100%;
+/*	margin-bottom: 50px;
+*/}
+
+.pitch-content {
+	overflow-wrap: break-word;
+	white-space: normal;
+
+    width: 100%;
+}
+
+.pitch-big-header {
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    color: #424242;
+    margin-bottom: 23px;
+    letter-spacing: .4px;
+}
+.secondary-pitch-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+
+    color: #424242;
+    letter-spacing: .4px;
+}
+
+.pitch-subheader {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #424242;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+
+.secondary-pitch-header {
+	    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 96px;
+    line-height: 45px;
+
+
+}
+
+.secondary-pitch-link {
+	font-size: .875rem;
+	font-weight: 300;
+    font-style: normal;
+    color: rgb(222, 174, 26);
+    font-family: Roboto Mono;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+
+.secondary-nav {
+	padding-left: 32px;
+
+	margin-top: 40px;
+	border-left: 1px solid;
+    background: #f4f4f4;
+	width: 860px;
+    font-size: .8em;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+}
+
+.secondary-nav-item {
+	transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+    display: block;
+    vertical-align: middle;
+}
+
+.pitch-nav-item-link {
+	font-size: 1.8rem;
+	line-height: 3.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+	text-transform: capitalize;
+    margin: 0;
+
+
+}
+
+
+.secondary-pitch-copy {
+	display: block;
+	position: relative;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-bottom: 22px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #848484;
+    letter-spacing: .03rem;
+    min-height:50px;
+}
+
+
+.third {
+	width:33%;
+	float: left;
+	box-sizing: border-box;
+	vertical-align: top;
+    padding: 32px;
+}
+
+.twothird {
+	width:66.66%;
+	float:left;
+	padding: 32px;
+	height: 364px;
+	vertical-align: top;
+	box-sizing: border-box;
+
+}
+
+.twothird > .pitch-image {
+	height: 400px;
+
+}
+
+.twothird > .pitch-content {
+	float: left;
+}
+
+.third-cell > a >.pitch-content {
+	width: 100%;
+
+}
+
+.third-cell > a >  .image-container > .pitch-image {
+	height:300px;
+	margin-bottom:0px;
+}
+
+.secondary-header-chunk {
+	/*padding-left: 32px;*/
+}
+
+
+</style>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/play.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+	<div class="agency-secondary-page-container">
+		
+
+		<div class="agency-secondary-body-container">
+			<div class="secondary-header-chunk">
+				Services
+				<div class="agency-secondary-header"> Screen Printing </div>
+			</div>
+
+
+			<ul class="secondary-nav">
+				<li class="secondary-nav-item">
+					Contents</li>
+				<li class="secondary-nav-item">
+					<a  href="#screenprinting" class="pitch-nav-item-link">Overview</a></li>
+				<li class="secondary-nav-item" class="pitch-nav-item-link">
+					<a href="#branding" class="pitch-nav-item-link">Effects and Techniques</a></li>
+				<li class="secondary-nav-item" >
+					<a href="#webdev" class="pitch-nav-item-link">Placement Options</a></li>
+				<li class="secondary-nav-item" >
+					<a href="#prototyping" class="pitch-nav-item-link">Products</a></li>
+				<li class="secondary-nav-item" >
+					<a href="#prototyping" class="pitch-nav-item-link">Pricing</a></li>
+				<li class="secondary-nav-item" >
+					<a href="#prototyping" class="pitch-nav-item-link">FAQ</a></li>
+				<li class="secondary-nav-item" >
+					<a href="#prototyping" class="pitch-nav-item-link">Get A Quote</a></li>
+			</ul>
+			<div class="full-cell-nh">
+				<div class="image-container">
+					<div class="secondary-pitch-image">
+					</div>
+				</div>
+			</div>
+				<div class="twothird">
+					<div class="pitch-content">
+						<div class="pitch-big-header"> Overview </div>
+						<div class="pitch-subheader"> Find the Perfect Printing Solution </div>
+						<div class="secondary-pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+					</div>
+				</div>
+				<div class="image-container third">
+					<div class="secondary-pitch-image">
+					</div>
+				</div>
+		
+
+			<div class="half-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Waterbase Screenprintng </div>
+						<div class="secondary-pitch-copy"> Eco-Friendly, Good for Light color Fabrics... Learn More. </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="half-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Plastisol Printing </div>
+						<div class="secondary-pitch-copy"> The Most Common ink for T shirts. Good for Halftones and Gradients </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			
+				<div class="twothird">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Effects and Techniques </div>
+						<div class="secondary-pitch-copy"> We offer a full sevice deisgn agency here in Oakland California. From Branding to Merchandising we have you covered. Collaboration or white glove service. Since 2000 we’ve had the chance to work with... </div>
+						<div class="secondary-pitch-link"> See all techniques and effects </div>
+					</div>
+				</div>
+				<div class="image-container third">
+					<div class="secondary-pitch-image">
+					</div>
+				</div>
+				
+			
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Puff Ink </div>
+						<div class="secondary-pitch-copy"> For a raised, 3D feel. </div>
+						<div class="secondary-pitch-link"> Availible in multiple colors! </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Glow in the Dark </div>
+						<div class="secondary-pitch-copy"> Traditional and UV activated Glow in the Dark. </div>
+						<div class="secondary-pitch-link"> Learn More </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Metallic Inks </div>
+						<div class="secondary-pitch-copy"> Gold, Silver, or Chrome, we got you. </div>
+						<div class="secondary-pitch-link"> See Metallic Inks </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			
+				<a href="#">
+					<div class="pitch-content third">
+						<div class="secondary-pitch-header"> Placement Options </div>
+						<div class="secondary-pitch-copy"> Wherever you want it. </div>
+						<div class="secondary-pitch-link"> See All Placement Options </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			
+
+			<div class="third-cell">
+				<a href="#">
+	
+						<div class="secondary-pitch-header"> Front Center </div>
+				
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+				
+						<div class="secondary-pitch-header"> Front Left Chest </div>
+
+				
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+				
+						<div class="secondary-pitch-header"> Back Center </div>
+				
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					
+						<div class="secondary-pitch-header"> Sleeve </div>
+					
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+				
+						<div class="secondary-pitch-header"> Pocket </div>
+
+					
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					
+						<div class="secondary-pitch-header"> Inside Pocket </div>
+				
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			
+		
+					<div class="pitch-content third">
+						<div class="secondary-pitch-header"> Products</div>
+						<div class="secondary-pitch-copy"> Staff Apparel, Memorabilia, and Corporate swag </div>
+						<div class="secondary-pitch-link"> We'll print on almost anything! </div>
+					</div>
+					<div class="image-container twothird">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+		
+			
+
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Garments </div>
+						<div class="secondary-pitch-copy"> T-shirts, Fleece, Hats, and more! </div>
+						<div class="secondary-pitch-link"> View All </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Bags and Accessories </div>
+						<div class="secondary-pitch-copy"> Totes, Drinkware, etc. </div>
+						<div class="secondary-pitch-link"> View All </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="third-cell">
+				<a href="#">
+					<div class="pitch-content">
+						<div class="secondary-pitch-header"> Marketing Materials </div>
+						<div class="secondary-pitch-copy"> Letterhead, Stationary, Business Cards, etc.</div>
+						<div class="secondary-pitch-link">  View All </div>
+					</div>
+					<div class="image-container">
+						<div class="secondary-pitch-image">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div id="pricing" class="full-cell-nh">
+				<a href="#">
+					<div class="secondary-secondary-pitch-header"> Pricing </div>
+				</a>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
+

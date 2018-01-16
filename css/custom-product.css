@@ -522,7 +522,7 @@ Colors Step - style
 .cd-product-previews > li img {
   display: block;
   width: 100%;
-  max-width: 620px;
+  max-width: 540px;
   margin: 0 auto;
 }
 .cd-product-previews-ink {
