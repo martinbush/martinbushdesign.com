@@ -17,12 +17,13 @@ jQuery(document).ready(function($){
 		this.secondaryNavigation = this.element.find('.cd-builder-secondary-nav');
 		//emulates clicking the shopify buy button
 		this.shopifyBuy = this.element.find('#product-component-8bfe16a8cb7');
+		console.log(this.shopifyBuy);
 		//used to check if the builder content has been loaded properly
 		this.loaded = true;
 		
 		// bind builder events
 		this.bindEvents();
-		console.log("v4");
+		console.log("v5");
 	}
 
 	ProductBuilder.prototype.bindEvents = function() {
@@ -44,6 +45,8 @@ jQuery(document).ready(function($){
 		//TODO: Code for when you ARE clicking buy (i.e. li:(.buy))
 		this.secondaryNavigation.on('click', '.nav-item .buy', function(event){ 
 			console.log("test");
+			console.log(this.shopifyBuy);
+
 			this.shopifyBuy.click();
 			console.log("postTest");
 		});
