@@ -17,13 +17,13 @@ jQuery(document).ready(function($){
 		this.secondaryNavigation = this.element.find('.cd-builder-secondary-nav');
 		//emulates clicking the shopify buy button
 		this.shopifyBuy = this.element.find('#product-component-8bfe16a8cb7');
-		console.log(this.shopifyBuy);
+		console.log(this.shopifyBuy.id);
 		//used to check if the builder content has been loaded properly
 		this.loaded = true;
 		
 		// bind builder events
 		this.bindEvents();
-		console.log("v5");
+		console.log("v6");
 	}
 
 	ProductBuilder.prototype.bindEvents = function() {
