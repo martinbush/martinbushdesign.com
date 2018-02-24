@@ -15,6 +15,8 @@ jQuery(document).ready(function($){
 		//builder navigations
 		this.mainNavigation = this.element.find('.cd-builder-main-nav');
 		this.secondaryNavigation = this.element.find('.cd-builder-secondary-nav');
+		//emulates clicking the shopify buy button
+		this.shopifyBuy = this.element.find('.hidden-shopify-button');
 		//used to check if the builder content has been loaded properly
 		this.loaded = true;
 		
@@ -42,6 +44,7 @@ jQuery(document).ready(function($){
 		//TODO: Code for when you ARE clicking buy (i.e. li:(.buy))
 		this.secondaryNavigation.on('click', '.nav-item .buy', function(event){ 
 			console.log("test");
+			this.shopifyBuy.click();
 		});
 
 
