@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 		});
 
 		//TODO: Code for when you ARE clicking buy (i.e. li:(.buy))
-		this.secondaryNavigation.on('click', '.nav-item li:.buy', function(event){ 
+		this.secondaryNavigation.on('click', '.nav-item .buy', function(event){ 
 			console.log("test");
 		});
 
