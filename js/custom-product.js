@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 		
 		// bind builder events
 		this.bindEvents();
-		console.log("v2");
+		console.log("v3");
 	}
 
 	ProductBuilder.prototype.bindEvents = function() {
@@ -45,6 +45,7 @@ jQuery(document).ready(function($){
 		this.secondaryNavigation.on('click', '.nav-item .buy', function(event){ 
 			console.log("test");
 			this.shopifyBuy.click();
+			console.log("postTest");
 		});
 
 
