@@ -20,6 +20,7 @@ jQuery(document).ready(function($){
 		
 		// bind builder events
 		this.bindEvents();
+		console.log("v2");
 	}
 
 	ProductBuilder.prototype.bindEvents = function() {
