@@ -37,6 +37,13 @@ jQuery(document).ready(function($){
 			var stepNumber = ( $(this).parents('.next').length > 0 ) ? $(this).index() + 1 : $(this).index() - 1;
 			self.loaded && self.newContentSelected(stepNumber);
 		});
+
+		//TODO: Code for when you ARE clicking buy (i.e. li:(.buy))
+		this.secondaryNavigation.on('click', '.nav-item li:.buy', function(event){ 
+			console.log("test");
+		});
+
+
 		//detect click on one element in an options list (e.g, models, accessories)
 		this.optionsLists.on('click', '.js-option', function(event){
 			self.updateListOptions($(this));
@@ -102,6 +109,7 @@ jQuery(document).ready(function($){
 		this.secondaryNavigation.find('.nav-item.prev').find('li').eq(nextStep).addClass('visible').removeClass('visited').prevAll().removeClass('visited').addClass('visited').end().nextAll().removeClass('visible visited');
 	}
 
+	// This happens when you get to the summary page
 	ProductBuilder.prototype.createSummary = function() {
 		var self = this;
 		this.steps.each(function(){

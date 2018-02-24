@@ -1,0 +1,57 @@
+var garmentType = class garment-label
+var garmentSize = class size-label
+var garmentColor = class color-label
+var inkColor = class ink-lable
+
+var productDetails = str.concat(garmentType, garmentSize, garmentColor, inkColor); -- mens t-shirt small white black
+
+for(var i = 0; i < possibleProducts; i++) {
+
+	
+
+
+		if productDetails == garmentSizeColorInk
+
+	
+
+	populate href of buy button with specific URL 
+
+	endif
+
+endfor
+
+}
+
+
+var possibleProducts = 
+
+"mens-tshirt-small-white-black": 40234208338,
+"mens-tshirt-medium-white-black": 40234208402,
+"mens-tshirt-large-white black": 40234208466,
+"mens-tshirt-x-large-white-black": 40234208530,
+"mens-tshirt-xx-large-white-black": 40234208594,
+
+"mens-tshirt-small-white-white": 40234211154,
+"mens-tshirt-medium-white-white": 40234211218,
+"mens-tshirt-large-white-white": 40234211282,
+"mens-tshirt-x-large-white-white": 40234211346,
+"mens-tshirt-xx-large-white-white": 40234211410,
+
+"mens-tshirt-small-black-white": 40234207826,
+"mens-tshirt-medium-black-white": 40234207890,
+"mens-tshirt-large-black-white": 40234207954,
+"mens-tshirt-x-large-black-white": 40234208018,
+"mens-tshirt-xx-large-black-white": 40234208082,
+
+"mens-tshirt-small-black-white": 40234208786,
+"mens-tshirt-medium-black-white": 40234208850,
+"mens-tshirt-large-black-white": 40234208914,
+"mens-tshirt-x-large-black-white": 40234208978,
+"mens-tshirt-xx-large-black-white": 40234209042,
+
+};
+
+
+
+
+document.getElementById("buyNow").innerHTML = ;
