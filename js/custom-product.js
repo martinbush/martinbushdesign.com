@@ -16,13 +16,13 @@ jQuery(document).ready(function($){
 		this.mainNavigation = this.element.find('.cd-builder-main-nav');
 		this.secondaryNavigation = this.element.find('.cd-builder-secondary-nav');
 		//emulates clicking the shopify buy button
-		this.shopifyBuy = this.element.find('.hidden-shopify-button');
+		this.shopifyBuy = this.element.find('#product-component-8bfe16a8cb7');
 		//used to check if the builder content has been loaded properly
 		this.loaded = true;
 		
 		// bind builder events
 		this.bindEvents();
-		console.log("v3");
+		console.log("v4");
 	}
 
 	ProductBuilder.prototype.bindEvents = function() {
