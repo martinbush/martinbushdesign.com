@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/dynamic_header.css">
+<link rel="stylesheet" type="text/css" href="css/apparel_work.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+
+</head>
+
+ <div class="header ltgrey-bg">
+    <div class="title"> 
+        <a href="index.html">
+            <h1>Martin Bush</h1>
+        </a>
+        <!--        <h2>UI/UX and Animation</h2> -->
+
+    </div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="cut-sew-apparel.html">Cut & Sew</a>
+        </li>
+        <li class="nav-item">
+            <a href="oak-collabs.html">Collabs</a>
+        </li>
+        <li class="nav-item">
+            <a href="graphic-apparel.html">Graphic Apparel</a>
+        </li>
+        <li class="nav-item">
+            <a href="play.html">Play</a>
+        </li>
+        <li class="nav-item">
+            <a href="about.html">About</a>
+        </li>
+    </ul>
+ </div>
+
+<body>
+	<div class="wrapper">
+	
+
+		<div class="project" >
+			<a  href="cut-sew-apparel.html">
+				<div class="project-bkgd-img" style="background-image:url(images/apparel_work/windbreak_4.jpg);">
+			</div>
+            <div class="project-titles"> 
+                <div class="project-type"> Product Design </div>
+                <div class="project-product-title"> Cut & Sew Apparel / Hats </div>
+                <div class="project-details-line">  Embroidery, Applique, Screen Printing  </div>
+                <div class="project-brand-line"> Oaklandish  </div>
+                <div class="project-date-line"> Fall 2017 - Present  </div>
+            </div>
+			</a>
+		</div>
+			 
+		<div class="project" >
+			<a  href="socialprintstudioweb.html">
+				<div class="project-bkgd-img" style="background-image:url(images/apparel_work/porthero-18.jpg);">
+			</div>
+            <div class="project-titles"> 
+                <div class="project-type"> Graphic / Product Design </div>
+                <div class="project-product-title"> Oaklandish Collaborations </div>
+                <div class="project-details-line"> Applique, Screen Printing  </div>
+                <div class="project-brand-line"> Golden State Warriors, Champion, TedX...  </div>
+                <div class="project-date-line"> Fall 2017 - Present  </div>
+            </div>
+			</a>
+		</div>
+
+        <div class="project" >
+            <a  href="graphic-apparel.html">
+                <div class="project-bkgd-img" style="background-image:url(images/apparel_work/graphic_tees.jpg);">
+            </div>
+            <div class="project-titles"> 
+                <div class="project-type"> Graphic / Product Design </div>
+                <div class="project-product-title"> Graphic T-Shirts / Outerwear </div>
+                <div class="project-details-line">  Screen Printing  </div>
+                <div class="project-brand-line"> Oaklandish  </div>
+                <div class="project-date-line"> Spring 2017 - Present  </div>
+            </div>
+
+            </a>
+        </div>
+
+		<!-- <div class="project" >
+			<a  href="play.html">
+				<div class="project-bkgd-img" style="background-image:url(images/apparel_work/play_hero.jpg);">
+			</div>
+            <div class="project-titles"> 
+                <div class="project-type"> Self Published </div>
+                <div class="project-product-title"> Play </div>
+                <div class="project-brand-line"> Just for fun </div>
+                <div class="project-details-line"> Illustration, Sewing, Photography  </div>
+                <div class="project-date-line"> all the time  </div>
+            </div>
+			</a>
+		</div> -->
+	</div>
+	
+
+	<div class="footer-wrapper">
+		<ul class="footer">
+			<li class="footer-links">
+				<a href="http://www.linkedin.com/in/martincbush" target="_blank">
+					<img src="images/footer/linkedin_icon.png">LinkedIn</a></li>
+			<li class="footer-links">
+				<a href="https://www.behance.net/martinbushdesign" target="_blank">
+					<img src="images/footer/behance_icon.png">Behance</a></li>
+			<li class="footer-links">
+				<a href="http://instagram.com/martybush" target="_blank">
+					<img src="images/footer/instagram_icon.png">Instagram</a></li>
+			<!-- <li class="footer-links">
+				<a href="##">Resume</a></li> -->
+		</ul>
+	</div>
+	</body>
+<script type="text/javascript">
+
+    $(window).mousemove(getMousePosition);
+    
+    var mouseX;
+    var mouseY;
+    var imageTop;
+    var imageBottom;
+    var imageLeft;
+    var imageRight;
+
+    var keyframe1;
+    var keyframe2;
+    var keyframe3;
+    var keyframe4;
+    var keyframe5;
+    var keyframe6;
+    var keyframe7;
+    var keyframe8;
+    var keyframe9;
+    var keyframe10;
+    var keyframe11;
+
+    var imageTop = $(".video-frame").offset().top;
+    var imageLeft = $(".video-frame").offset().left;
+    var imageBottom = imageTop + $(".video-frame").height();
+    var imageRight = imageLeft + $(".video-frame").width();
+
+    var keyframe1 = imageLeft + 80;
+    var keyframe2 = imageLeft + 160;
+    var keyframe3 = imageLeft + 240;
+    var keyframe4 = imageLeft + 320;
+    var keyframe5 = imageLeft + 400;
+    var keyframe6 = imageLeft + 480;
+    var keyframe7 = imageLeft + 560;
+    var keyframe8 = imageLeft + 720;
+    var keyframe9 = imageLeft + 800;
+    var keyframe10 = imageLeft + 880;
+    var keyframe11 = imageLeft + 960;
+
+    var y 
+    
+    function handleOrientation(event) {
+
+	  y = event.gamma;
+
+	  $(".video-frame").css("z-index","0");
+	   if( 10 > y  && y > (-10) ){
+            $(".frame6").css("z-index","1");
+        } else if (10 < y && y < 20){
+        	$(".frame8").css("z-index","1");
+        } else if (20 < y && y < 30){
+        	$(".frame9").css("z-index","1");
+        } else if (y < (-10) && y > (-20)){
+        	$(".frame4").css("z-index","1");
+        } else if ( y < (-20) && y > (-30)){
+        	$(".frame2").css("z-index","1");
+        } else if (y < -30){
+        	$(".frame1").css("z-index","1");
+        } else if (y > 30){
+        	$(".frame11").css("z-index","1");
+        }
+	}
+
+	window.addEventListener("deviceorientation", handleOrientation, true);
+
+    $(window).load(init);
+
+    function init(){
+        mouseX = 0;
+        mouseY = 0;
+
+          imageTop = $(".video-frame").offset().top;
+          imageBottom = imageTop + $(".video-frame").height();
+          imageLeft = $(".video-frame").offset().left;
+          imageRight = imageLeft + $(".video-frame").width();
+    }
+
+    $( window ).resize(function() {
+    	console.log(5);
+	    imageTop = $(".video-frame").offset().top;
+	    imageLeft = $(".video-frame").offset().left;
+	    imageBottom = imageTop + $(".video-frame").height();
+	    imageRight = imageLeft + $(".video-frame").width();
+    });
+
+    function getMousePosition(event){
+        mouseX = event.pageX;
+        mouseY = event.pageY;
+
+        $(".video-frame").css("z-index","0");
+        if(mouseX >imageLeft && mouseX <keyframe1 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame1").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe2 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame2").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe3 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame3").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe4 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame4").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe5 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame5").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe6 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame6").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe7 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame7").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe8 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame8").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe9 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame9").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe10 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame10").css("z-index","1");
+        } else if(mouseX >imageLeft && mouseX <keyframe11 && mouseY >imageTop &&  mouseY <imageBottom){
+            $(".frame11").css("z-index","1");
+        }
+    }
+
+
+
+  </script>
+</html>

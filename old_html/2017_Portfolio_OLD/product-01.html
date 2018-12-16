@@ -1,0 +1,337 @@
+<li data-selection="sizes" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Select Size</h1>
+			<span class="steps-indicator">Step <b>1</b> of 5</span>
+		</header>
+		
+		<ul class="cd-product-previews">
+			<li class="selected"><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+
+		</ul>
+
+		<ul class="cd-product-customizer">
+			<li data-content="XSmall" data-price="0" class="selected"><a data-size="xsmall" href="#0">X-Small</a></li>
+			<li data-content="Small" data-price="0"><a data-size="small" href="#0">Small</a></li>
+			<li data-content="Medium" data-price="0"><a data-size="medium" href="#0">Medium</a></li>
+			<li data-content="Large" data-price="0"><a data-size="large" href="#0">Large</a></li>
+			<li data-content="XLarge" data-price="0"><a data-size="xlarge" href="#0">X-large</a></li>
+			<li data-content="XXLarge" data-price="0"><a data-size="xxlarge" href="#0">XX-Large</a></li>
+		</ul>
+	</section>
+</li>
+
+<li data-selection="colors" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Select Garment Color</h1>
+			<span class="steps-indicator">Step <b>2</b> of 5</span>
+		</header>
+		
+		<ul class="cd-product-previews">
+			<li class="selected"><img src="custom-product-img/product01_col01.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col02.jpg" alt="Product Preview" class="product-preview"></li>
+			<li><img src="custom-product-img/product01_col03.jpg" alt="Product Preview" class="product-preview"></li>
+		</ul>
+
+		<ul class="cd-product-customizer">
+			<li data-content="White" data-price="0" class="selected"><a data-color="white" href="#0">White - $0</a></li>
+			<li data-content="Mint" data-price="0"><a data-color="mint" href="#0">Mint - $0</a></li>
+			<li data-content="Lemon" data-price="0"><a data-color="lemon" href="#0">Lemon - $0</a></li>
+		</ul>
+	</section>
+</li>
+
+<li data-selection="inks" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Select Ink Color</h1>
+			<span class="steps-indicator">Step <b>3</b> of 5</span>
+		</header>
+		<div class="product-preview-wrapper">
+			<div class="cd-product-preview selected-product"> 
+				<img id="chosen-garment"src="">
+			</div>
+			<ul class="cd-product-previews ink-image">
+				<li class="selected"><img src="custom-product-img/classictree_col01.png" alt="Product Preview" class="product-preview"></li>
+				<li><img src="custom-product-img/classictree_col02.png" alt="Product Preview" class="product-preview"></li>
+				<li><img src="custom-product-img/classictree_col03.png" alt="Product Preview" class="product-preview"></li>
+			</ul>
+		
+			<ul class="cd-product-customizer ink-color">
+				<li data-content="Coral" data-price="0" class="selected"><a data-inkcolor="coral" href="#0">Coral</a></li>
+				<li data-content="Black" data-price="0"><a data-inkcolor="black" href="#0">Black</a></li>
+				<li data-content="White" data-price="0"><a data-inkcolor="white" href="#0">White</a></li>
+			</ul>
+
+		</div>
+	</section>
+</li>
+
+<li data-selection="summary" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Summary</h1>
+			<span class="steps-indicator">Step <b>4</b> of 5</span>
+		</header>
+		
+		<ul class="summary-list">
+			<li>
+				<h2>Your Custom Classic</h2>
+
+				<div class="product-preview-wrapper">
+				<img src="custom-product-img/product01_col01.jpg" alt="Alfa Romeo Giulietta" class="product-preview">
+				<img src="" class="ink-color-summary-preview">
+				</div>
+				
+				<h3>Men's T-shirt</h3>
+			</li>
+
+			<li data-summary="sizes">
+				<h2>Size</h2>
+				
+				<span class="summary-size">
+					<em class="size-label">THIS SHOULD BE YOUR SELECTED SIZE</em>
+				</span>
+			</li>
+
+			<li data-summary="colors">
+				<h2>Color</h2>
+				
+				<span class="summary-color">
+					<em class="color-swatch" data-color="red"></em>
+					<em class="color-label">Red Passion</em>
+				</span>
+			</li>
+
+			<li data-summary="inks">
+				<h2>Ink</h2>
+
+				<span class="summary-color">
+					<em class="color-swatch" data-inkcolor="red"></em>
+					<em class="ink-label">Red Passion</em>
+				</span>
+
+			</li>
+		</ul>
+	</section>
+</li>
+<div id="product-component-8bfe16a8cb7"></div>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'oakwebstore.myshopify.com',
+      apiKey: '4496c9d39e10c34cd0e024d1d4fe3009',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10255972370],
+        variantId: 40234208722,
+        node: document.getElementById('product-component-8bfe16a8cb7'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "variantId": "40234208722",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "BUY NOW"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "padding-left": "46px",
+        "padding-right": "46px",
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "description": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-size": "12px",
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Source Sans Pro"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "padding-left": "46px",
+        "padding-right": "46px",
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "description": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro",
+      "Source Sans Pro"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Source Sans Pro, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Source Sans Pro"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Source Sans Pro, sans-serif"
+      },
+      "select": {
+        "font-family": "Source Sans Pro, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Source Sans Pro",
+      "Source Sans Pro"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
