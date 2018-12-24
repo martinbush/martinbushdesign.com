@@ -61,6 +61,8 @@
  	width:50%;
  	text-align: center;
  	margin: 0 auto;
+ 	margin-top: 32px;
+	margin-bottom: 58px;
  }
 
  .project-bkgd-img-c-s {
@@ -143,26 +145,32 @@
  	white-space: nowrap;
  	overflow: hidden;
  	text-overflow: ellipsis;
+ 
  }
 
 
  .work-project-title {
- 	font-size: 1.0rem;
- 	color:#414042;
- 	font-weight: 200;
+ 	font-size: 1.7rem;
+ 	color:#1f1f1f;
+ 	font-weight: 400;
  	line-height: 1.2em;
- 	white-space: nowrap;
- 	overflow: hidden;
+/* 	white-space: nowrap;
+ 	overflow: hidden;*/
+ 	text-transform: uppercase;
  	margin: 0;
  	padding: 0;
+ 	letter-spacing: .06rem;
+ 	margin-bottom: 24px;
  	text-overflow: ellipsis;
  }
 
  .work-project-subtitle {
- 	font-size: .9rem;
+ 	font-size: 1.2rem;
  	color:#1f1f1f;
  	margin: 0 auto;
  	padding: 0;
+ 	margin-bottom: 8px;
+ 	font-weight: 600;
  	line-height: 1.2em;
  	letter-spacing: .01rem;
 
@@ -172,9 +180,12 @@
  	font-size: .9rem;
  	padding-top: 20px;
  	color:#1f1f1f;
+ 	width: 65%;
  	margin: 0;
+ 	float: initial;
  	padding: 0;
- 	margin-bottom:58px;
+ 	margin: 0 auto;
+ 	margin-bottom: 24px;
  	line-height: 1.2rem;
  	letter-spacing: .02rem;
  	font-weight: 400;
@@ -231,11 +242,40 @@
  	width:60.9%
  }
 
-.img-gallery-pic {
+.ind-project-title {
+ 		font-size: 1.1rem;
+ 		color:#414042;
+ 		font-weight: 400;
+ 		margin-bottom: 20px;
+ 		font-weight: 600;
+ 		text-transform: uppercase;
+ 		letter-spacing: .04rem;
+ 		white-space: initial; 
+    	overflow: initial; 
+ 	}
+
+ 	.ind-project-subtitle {
+ 		font-size: .95rem;
+ 		line-height: 1.2rem;
+ 		letter-spacing: .01rem;
+ 		font-weight: 600;
+ 		margin-bottom: 4px;
+
+ 	}
+
+ 	.ind-project-skills {
+ 		font-size: .8rem;
+ 		line-height: 1.1rem;
+ 		letter-spacing: .02rem;
+ 		margin-bottom:8px;
+ 		font-weight: 400;
+
+ 	}
+
+ 	.img-gallery-pic {
 	width:50%;
 	display:inline-block;
 	float:left;
-
 }
 
 
@@ -245,6 +285,7 @@
  		width:98%;
  		padding-top: 36px;
  	}
+
  	.project-type {
  		font-size:.8em;
  		font-weight: 500;
