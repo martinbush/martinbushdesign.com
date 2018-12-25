@@ -250,6 +250,15 @@ a {
 }
 
 
+@media only screen and (max-width: 1220px) {
+	.wrapper {
+ 		width:98%;
+ 	}
+
+
+}
+
+
 @media only screen and (max-width: 1000px) {
 
 	.wrapper {

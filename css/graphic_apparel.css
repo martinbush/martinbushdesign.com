@@ -55,6 +55,7 @@
  }
  .project-pg-proj > img {
  	max-width: 100%;
+ 	width:800px;
  }
 
  .project-titles-summary {
@@ -92,9 +93,9 @@
 
  .project-details-section {
  	background-color: #f3f3f3;
- 	padding-top: 30px;
  	width: 80%;
  	margin: 0 auto;
+ 	padding-bottom: 24px;
  }
 
  .project-image {
@@ -152,7 +153,7 @@
  .work-project-title {
  	font-size: 1.7rem;
  	color:#1f1f1f;
- 	font-weight: 400;
+ 	font-weight: bold;
  	line-height: 1.2em;
 /* 	white-space: nowrap;
  	overflow: hidden;*/
@@ -180,7 +181,7 @@
  	font-size: .9rem;
  	padding-top: 20px;
  	color:#1f1f1f;
- 	width: 65%;
+ 	width: 60%;
  	margin: 0;
  	float: initial;
  	padding: 0;
@@ -189,8 +190,13 @@
  	line-height: 1.2rem;
  	letter-spacing: .02rem;
  	font-weight: 400;
+ 	white-space: initial;
  }
 
+.features {
+	line-height: 1.5rem;
+	letter-spacing: .04rem;
+}
 
  .white {
  	background-color: #ffffff;
@@ -267,8 +273,13 @@
  		font-size: .8rem;
  		line-height: 1.1rem;
  		letter-spacing: .02rem;
+ 		margin: 0 auto;
  		margin-bottom:8px;
  		font-weight: 400;
+ 		overflow: initial;
+ 		width: 70%;
+ 		white-space: initial;
+ 		float: inital;
 
  	}
 
@@ -278,6 +289,18 @@
 	float:left;
 }
 
+.doublewide {
+	width:100%;
+}
+
+@media only screen and (max-width: 1220px) {
+	.wrapper {
+ 		width:98%;
+ 		padding-top: 36px;
+ 	}
+
+
+}
 
  @media only screen and (max-width: 1000px) {
 
