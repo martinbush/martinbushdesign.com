@@ -130,7 +130,7 @@
 }
 
 .nav .nav-item:hover a{
-	background-color: rgba(0,255,255,.8);
+	background-color:rgba(92, 182, 161, 0.43);
 	-webkit-transition: background-color 940ms;
     -moz-transition: background-color 940ms;
 }
@@ -154,7 +154,7 @@ a:focus {
 }
 
 .selected { 
-	background-color: rgba(0,255,255,.8)!important;
+	background-color: rgba(92, 182, 161, 0.43)!important;
  }
 
 
