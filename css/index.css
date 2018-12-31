@@ -1,5 +1,5 @@
 html, body {
-	background-color: #f3f3f3;
+	background-color: #fafafa;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
@@ -38,12 +38,20 @@ a {
 	text-align: center; 
     position: relative;
     width: 75%;
-    max-width: 1030px;
+    max-width: 1230px;
     margin: 0 auto;
     display: block;
     padding-top: 80px;
     min-height: 70%;
 }
+
+ .split-header {
+ 	text-align: left;
+    font-weight: 500;
+    letter-spacing: .02em;
+    margin-bottom: 58px;
+    padding-left: 48px;
+ }
 
 
 .project-square {
@@ -129,7 +137,7 @@ a {
 }*/
 
 .project-square:hover .overlay {
-	background-color: rgba(255,255,255, .3);
+	background-color: rgba(255,255,255, .18);
 	-webkit-transition: background-color 300ms; 
     transition: background-color 300ms;
     transition-timing-function: ease-out;
@@ -203,7 +211,7 @@ a {
 .overlay {
 	z-index: 2;
 	width:100%;
-	background-color: rgba(0,0,0, .4);
+	background-color: rgba(0,0,0, .6);
 	height:400px;
 	position: relative;
 }

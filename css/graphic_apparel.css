@@ -1,5 +1,5 @@
  body {
- 	background-color: #f3f3f3;
+ 	background-color: #fafafa;
  	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
  	font-family: 'Source Sans Pro', sans-serif;
  	margin: 0;
@@ -16,7 +16,7 @@
  	margin: 0 auto;
  	max-width: 100%;
  	padding:0;
- 	padding-top: 50px;
+ 	padding-top: 36px;
  	padding-bottom: 1.80em;
  	display: block;
  }
@@ -33,16 +33,23 @@
  .project-header {
  	display: block;
  	position: relative;
- 	width: 100%;
+ 	width: 1220px;
  	margin: 0 auto;
  	text-align: center;
+ }
+ .split-header {
+ 	text-align: left;
+    font-weight: 500;
+    letter-spacing: .05em;
+    margin-bottom: 36px;
  }
 
  .project-pg-proj {
  	display:block;
  	float: initial;
+ 	width: 800px;
  	position: relative;
- 	text-align: center;
+ 	text-align: left;
  	margin: 0 auto;
  	margin-bottom:24px;
  	margin-top: 12px;
@@ -50,9 +57,10 @@
 
  .project-pg-project-titles{
  	margin-top: 24px;
- 	width: 80%;
-
-
+ 	width: 800px;
+ 	margin:0 auto;
+ 	text-align: left;
+ 	margin-top: 24px;
  }
  .project-pg-proj > img {
  	max-width: 100%;
@@ -63,10 +71,12 @@
  }
 
  .project-titles-summary {
- 	width:50%;
- 	text-align: center;
+ 	padding-left: 48px;
+ 	width:1220px;
+ 	text-align: left;
  	margin: 0 auto;
- 	margin-top: 32px;
+ 	margin-top: 12px;
+    margin-left: .8rem;
 	margin-bottom: 58px;
  }
 
@@ -96,8 +106,7 @@
  }
 
  .project-details-section {
- 	background-color: #f3f3f3;
- 	width: 80%;
+ 	background-color: #fafafa;
  	margin: 0 auto;
  	padding-bottom: 24px;
  }
@@ -155,18 +164,18 @@
 
 
  .work-project-title {
- 	font-size: 1.7rem;
- 	color:#1f1f1f;
- 	font-weight: bold;
- 	line-height: 1.2em;
-/* 	white-space: nowrap;
- 	overflow: hidden;*/
- 	text-transform: uppercase;
- 	margin: 0;
- 	padding: 0;
- 	letter-spacing: .06rem;
- 	margin-bottom: 24px;
- 	text-overflow: ellipsis;
+
+    font-size: 2rem;
+    color: #1f1f1f;
+    /* font-weight: bold; */
+    line-height: 1.2em;
+    /* text-transform: uppercase; */
+    margin: 0;
+    padding: 0;
+    letter-spacing: .06rem;
+    margin-bottom: 12px;
+    text-overflow: ellipsis;
+    font-weight: 500;
  }
 
  .work-project-subtitle {
@@ -185,7 +194,7 @@
  	font-size: .9rem;
  	padding-top: 20px;
  	color:#1f1f1f;
- 	width: 60%;
+ 	color:#777777;
  	margin: 0;
  	float: initial;
  	padding: 0;
@@ -198,7 +207,7 @@
  }
 
 .features {
-	line-height: 1.6rem;
+	line-height: 2.0rem;
 	letter-spacing: .04rem;
 }
 
@@ -303,6 +312,9 @@
  		padding-top: 36px;
  	}
 
+ 	.project-pg-project-titles{
+ 		width: 96%;
+}
 
 }
 
@@ -324,7 +336,7 @@
  	.project-pg-project-titles{
  		margin:0 auto;
  		margin-top: 24px;
- 		width: 80%;
+ 		width: 96%;
  	}
 
  	.project-product-title {
@@ -390,8 +402,8 @@
  	}
 
  	.project-details-section {
-	    background-color: #f3f3f3;
-	    width: 80%;
+	    background-color: #fafafa;
+	    width: 96%;
 	    text-align: left;
 	    margin: 0 auto;
 	    padding-top: 0px;
@@ -402,6 +414,7 @@
 	 	position: relative;
 	 	text-align: left;
 	 	margin: 0 auto;
+	 	width: 800px;
 	 	margin-bottom:36px;
 	 	margin-top: 12px;
 	 }
@@ -446,7 +459,9 @@
  		height: 480px;
  		background-size: cover;
 
- }
+ } 
+
+}
 
 
  @media only screen and (max-width: 767px) { 
@@ -486,6 +501,7 @@
 
  	.project-pg-proj {
  		margin-bottom: 0px;
+ 		width: 98%;
  	}
 
 
@@ -531,7 +547,7 @@
 
 	.project-titles-summary {
  		width:68%;
- 		text-align: center;
+ 		text-align: left;
  		margin: 0 auto;
  		margin-bottom: 52px;
 
@@ -541,10 +557,10 @@
  		font-size: 1.1rem;
  		color:#414042;
  		font-weight: 400;
- 		margin: 0 auto;
+ 		margin:0 auto;
  		margin-bottom: 18px;
  		font-weight: 600;
- 		width: 80%;
+ 		width: 96%;
  		text-transform: uppercase;
  		letter-spacing: .04rem;
  		white-space: initial; 
