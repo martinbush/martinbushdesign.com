@@ -77,7 +77,7 @@
  	margin: 0 auto;
  	margin-top: 12px;
     margin-left: .8rem;
-	margin-bottom: 58px;
+	margin-bottom: 38px;
  }
 
  .project-bkgd-img-c-s {
@@ -460,6 +460,17 @@
  		background-size: cover;
 
  } 
+ .project-header {
+ 		display: block;
+ 		position: relative;
+ 		width: 80%;
+ 		margin: 0 auto;
+ 		text-align: center;
+ 	}
+
+ 	.project-titles-summary {
+ 		padding-left: 0;
+ 	}
 
 }
 

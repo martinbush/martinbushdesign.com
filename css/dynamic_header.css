@@ -1,5 +1,5 @@
 .header {
-		height: 100px;
+		height: 110px;
 		padding-top: 8px;
 		padding-bottom: 12px;
 		border-bottom: .5px solid;
@@ -138,8 +138,8 @@ a:focus {
 @media screen and (max-width: 900px) { 
 
 	.header {
-		height: 110px;
-		padding-top: 50px;
+		height: 100px;
+		padding-top: 8px;
 	}
 
 	.title h1 {
@@ -147,12 +147,11 @@ a:focus {
 		left: initial;
 		margin:auto;
 		text-align: center;
-		font-size:20pt;
+		font-size:17pt;
 		letter-spacing: .01em;
-		font-weight: 600;
 		color:black;
 		position: relative;
-		margin-top: 11px;
+		margin-top: 18px;
 	}
 
 	.nav {
@@ -172,7 +171,7 @@ a:focus {
 
 	.nav-item {
 
-		font-size: 9pt
+		font-size: 8pt
 
 	}
 
