@@ -12,9 +12,10 @@
  }
  .wrapper {
  	text-align: center;
- 	width: 1220px;
+ 	position: relative;
+    width: 90%;
+    max-width: 1220px;
  	margin: 0 auto;
- 	max-width: 100%;
  	padding:0;
  	padding-top: 36px;
  	padding-bottom: 1.80em;
@@ -72,7 +73,6 @@
 
  .project-titles-summary {
  	padding-left: 48px;
- 	width:1220px;
  	text-align: left;
  	margin: 0 auto;
  	margin-top: 12px;

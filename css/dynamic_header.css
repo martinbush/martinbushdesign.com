@@ -1,39 +1,43 @@
 .header {
-		height: 110px;
-		padding-top: 8px;
-		padding-bottom: 12px;
-		border-bottom: .5px solid;
-		border-bottom-color: #c7c7c7;
-	}
+	height: 110px;
+    width: 90%;
+    max-width: 1220px;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-bottom: .5px solid;
+    border-bottom-color: #c7c7c7;
+}
 
-	.title h1 {
-		width: 100%;
-		left: initial;
-		margin:auto;
-		text-align: center;
-		font-size:17pt;
-	    letter-spacing: .02em;
-	    font-weight: 500;
-		color:black;
-		position: relative;
-		margin-top: 18px;
-		margin-bottom: 0px;
-	}
+.title h1 {
+	left: initial;
+	margin-left:1.1rem;
+	padding-left: 48px;;
+	text-align: left;
+	font-size:17pt;
+    letter-spacing: .02em;
+    font-weight: 500;
+	color:black;
+	position: relative;
+	margin-top: 18px;
+	margin-bottom: 0px;
+}
 
-	.nav {
-		width: 90%;
-		right: initial;
-		text-align: center;
-		margin:auto;
-		text-align: center;
-		list-style-type: none;
-		padding: initial;
-		padding-top: 16px;
-		position: relative;
-		margin-top: 11px;
+.nav {
+	width: 90%;
+    right: initial;
+    /* text-align: center; */
+    /* margin: auto; */
+    /* text-align: center; */
+    list-style-type: none;
+    padding-left: 48px;
+    padding-top: 16px;
+    position: relative;
+    margin-top: 11px;
 
 
-	}
+}
 
 .small {
 	z-index: 20;
@@ -140,12 +144,14 @@ a:focus {
 	.header {
 		height: 100px;
 		padding-top: 8px;
+		width: 100%;
 	}
 
 	.title h1 {
 		width: 100%;
 		left: initial;
 		margin:auto;
+		padding:0px;
 		text-align: center;
 		font-size:17pt;
 		letter-spacing: .01em;
