@@ -306,6 +306,11 @@
 	width:100%;
 }
 
+.isdisabled {
+
+	 pointer-events: none;
+}
+
 @media only screen and (max-width: 1220px) {
 	.wrapper {
  		width:98%;
