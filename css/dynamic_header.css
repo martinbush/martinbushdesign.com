@@ -104,7 +104,7 @@ hr {
 	padding: 1.2rem;
 	font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: .02em;
+    letter-spacing: .04em;
 	background-color: initial;
 		-webkit-transition: background-color 940ms;
     -moz-transition: background-color 940ms;
@@ -185,6 +185,8 @@ a:focus {
 	color:#414042;
 	padding: .9rem;
 	font-weight: 500;
+	line-height: 2.5rem;
+
 	background-color: initial;
 		-webkit-transition: background-color 940ms;
     -moz-transition: background-color 940ms;
